@@ -3,15 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/hadas/AndroidStudioProjects/GameSearchApp/app/src/main/res/layout/activity_main.xml" value="0.3333333333333333" />
-        <entry key="..\:/Users/hadas/AndroidStudioProjects/GameSearchApp/app/src/main/res/layout/fragment_company.xml" value="0.22" />
+        <entry key="..\:/Users/hadas/AndroidStudioProjects/GameSearchApp/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/hadas/AndroidStudioProjects/GameSearchApp/app/src/main/res/layout/fragment_company.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/hadas/AndroidStudioProjects/GameSearchApp/app/src/main/res/layout/fragment_game_info_page.xml" value="0.184375" />
         <entry key="..\:/Users/hadas/AndroidStudioProjects/GameSearchApp/app/src/main/res/layout/fragment_game_name.xml" value="0.22" />
         <entry key="..\:/Users/hadas/AndroidStudioProjects/GameSearchApp/app/src/main/res/layout/fragment_genre.xml" value="0.22" />
-        <entry key="..\:/Users/hadas/AndroidStudioProjects/GameSearchApp/app/src/main/res/layout/fragment_launch_date.xml" value="0.16983695652173914" />
+        <entry key="..\:/Users/hadas/AndroidStudioProjects/GameSearchApp/app/src/main/res/layout/fragment_launch_date.xml" value="0.22" />
         <entry key="..\:/Users/hadas/AndroidStudioProjects/GameSearchApp/app/src/main/res/layout/fragment_platform.xml" value="0.22" />
-        <entry key="..\:/Users/hadas/AndroidStudioProjects/GameSearchApp/app/src/main/res/layout/fragment_results_page.xml" value="0.184375" />
-        <entry key="..\:/Users/hadas/AndroidStudioProjects/GameSearchApp/app/src/main/res/layout/fragment_search_page.xml" value="0.184375" />
+        <entry key="..\:/Users/hadas/AndroidStudioProjects/GameSearchApp/app/src/main/res/layout/fragment_results_page.xml" value="0.22" />
+        <entry key="..\:/Users/hadas/AndroidStudioProjects/GameSearchApp/app/src/main/res/layout/fragment_search_page.xml" value="0.22" />
         <entry key="..\:/Users/hadas/AndroidStudioProjects/GameSearchApp/app/src/main/res/layout/fragment_welcome_page.xml" value="0.22" />
         <entry key="..\:/Users/hadas/AndroidStudioProjects/MyApplesson9/app/src/main/res/layout/activity_main.xml" value="0.1" />
       </map>
