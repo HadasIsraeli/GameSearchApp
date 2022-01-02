@@ -6,9 +6,155 @@
     tools:context=".FragmentCompany">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/BackToSearchFromCompanyButton"
+            android:layout_width="57dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center|left"
+            android:gravity="center|left"
+            android:padding="5dp"
+            android:text="Back" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="622dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="choose the Game company" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <CheckBox
+                android:id="@+id/ActionCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="Activision" />
+
+            <CheckBox
+                android:id="@+id/RacingCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="CD Projekt RED" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <CheckBox
+                android:id="@+id/BattleRoyaleCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="Forza Motorsport" />
+
+            <CheckBox
+                android:id="@+id/FirstPersonShooterCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="EA" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <CheckBox
+                android:id="@+id/AdventureCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="Rockstar Games" />
+
+            <CheckBox
+                android:id="@+id/RoleplayingCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="2K Sports" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <CheckBox
+                android:id="@+id/SportsCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:padding="15dp"
+                android:text="RIOT Games" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/SearchCompanyButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="search" />
+
+    </LinearLayout>
 
 </FrameLayout>

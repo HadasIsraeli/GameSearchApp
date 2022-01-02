@@ -6,9 +6,45 @@
     tools:context=".FragmentLaunchDate">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <Button
+            android:id="@+id/BackToSearchFromLaunchDateButton"
+            android:layout_width="74dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:text="Back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="347dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Search By Launch Date" />
+
+        <EditText
+            android:id="@+id/LaunchDateTime"
+            android:layout_width="match_parent"
+            android:layout_height="293dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="time" />
+
+        <Button
+            android:id="@+id/SearchLaunchDateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:padding="20dp"
+            android:text="search" />
+    </LinearLayout>
 
 </FrameLayout>

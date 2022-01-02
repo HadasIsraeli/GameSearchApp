@@ -3,12 +3,83 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="20dp"
     tools:context=".FragmentPlatform">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/BackToSearchFromPlatformButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|left"
+            android:gravity="center"
+            android:text="Back" />
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/GamePlatformText"
+            android:layout_width="match_parent"
+            android:layout_height="182dp"
+            android:text="choose the Game Platform" />
+
+        <CheckBox
+            android:id="@+id/PSCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="PS" />
+
+        <CheckBox
+            android:id="@+id/XboxCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Xbox" />
+
+        <CheckBox
+            android:id="@+id/PCCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="PC" />
+
+        <CheckBox
+            android:id="@+id/NitendoCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Nitendo" />
+
+        <Button
+            android:id="@+id/SearchPlatformButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="search" />
+    </LinearLayout>
 
 </FrameLayout>
