@@ -1,4 +1,4 @@
-package com.example.myapplesson9;
+package com.example.gamesearcher;
 
 import android.os.Bundle;
 

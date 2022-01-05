@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/FragmentSearchPage"
-        android:name="com.example.myapplesson9.FragmentSearchPage"
+        android:name="com.example.gamesearcher.FragmentSearchPage"
         android:label="fragment_blank_one"
         tools:layout="@layout/fragment_search_page" >
         <action
@@ -16,12 +16,12 @@
     </fragment>
 <!--    <fragment-->
 <!--        android:id="@+id/blankFragmentThree"-->
-<!--        android:name="com.example.myapplesson9.FragmentCompany"-->
+<!--        android:name="com.example.gamesearcher.FragmentCompany"-->
 <!--        android:label="fragment_blank_three"-->
 <!--        tools:layout="@layout/fragment_blank_three" />-->
 <!--    <fragment-->
 <!--        android:id="@+id/blankFragmentTwo"-->
-<!--        android:name="com.example.myapplesson5.BlankFragmentTwo"-->
+<!--        android:name="com.example.gamesearcher.BlankFragmentTwo"-->
 <!--        android:label="fragment_blank_two"-->
 <!--        tools:layout="@layout/fragment_blank_two" />-->
 
