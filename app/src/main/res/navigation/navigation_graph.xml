@@ -2,17 +2,17 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/navigation_graph">
+    android:id="@+id/navigation_graph"
     app:startDestination="@id/FragmentWelcomePage">
 
     <fragment
-        android:id="@+id/FragmentSearchPage"
-        android:name="com.example.gamesearcher.FragmentSearchPage"
-        android:label="fragment_blank_one"
-        tools:layout="@layout/fragment_search_page" >
+        android:id="@+id/FragmentWelcomePage"
+        android:name="com.example.gamesearcher.FragmentWelcomePage"
+        android:label="fragment_welcome_page"
+        tools:layout="@layout/fragment_welcome_page" >
         <action
             android:id="@+id/action_WelcomeFragment_to_SearchPageFragment"
-            app:destination="@id/FragmentSearchPage" />
+            app:destination="@id/FragmentWelcomePage" />
     </fragment>
 <!--    <fragment-->
 <!--        android:id="@+id/blankFragmentThree"-->
