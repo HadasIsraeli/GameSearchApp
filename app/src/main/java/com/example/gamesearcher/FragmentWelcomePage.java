@@ -69,7 +69,7 @@ public class  FragmentWelcomePage extends Fragment {
         StartSearchbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view1) {
-                Navigation.findNavController(view).navigate(R.id.action_WelcomeFragment_to_SearchPageFragment);
+                Navigation.findNavController(view).navigate(R.id.action_FragmentWelcomePage_to_fragmentSearchPage);
             }
         });
 

@@ -3,17 +3,19 @@ package com.example.gamesearcher;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link FragmentLaunchDate#newInstance} factory method to
+ * Use the {@link FragmentLaunchYear#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class FragmentLaunchDate extends Fragment {
+public class FragmentLaunchYear extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +26,7 @@ public class FragmentLaunchDate extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public FragmentLaunchDate() {
+    public FragmentLaunchYear() {
         // Required empty public constructor
     }
 
@@ -37,8 +39,8 @@ public class FragmentLaunchDate extends Fragment {
      * @return A new instance of fragment FragmentLaunchDate.
      */
     // TODO: Rename and change types and number of parameters
-    public static FragmentLaunchDate newInstance(String param1, String param2) {
-        FragmentLaunchDate fragment = new FragmentLaunchDate();
+    public static FragmentLaunchYear newInstance(String param1, String param2) {
+        FragmentLaunchYear fragment = new FragmentLaunchYear();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -58,7 +60,16 @@ public class FragmentLaunchDate extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_launch_date, container, false);
+        View view = inflater.inflate(R.layout.fragment_launch_year, container, false);
+
+        Button SearchLaunchYearButton = view.findViewById(R.id.SearchLaunchYearButton);
+
+        SearchLaunchYearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view1) {
+                Navigation.findNavController(view).navigate(R.id.action_fragmentLaunchYear_to_fragmentResultsPage);
+            }
+        });
+        return view;
     }
 }

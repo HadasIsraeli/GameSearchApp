@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FragmentLaunchDate">
+    tools:context=".FragmentLaunchYear">
 
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
@@ -15,31 +15,31 @@
         android:padding="20dp">
 
         <Button
-            android:id="@+id/BackToSearchFromLaunchDateButton"
+            android:id="@+id/BackToSearchFromLaunchYearButton"
             android:layout_width="74dp"
-            android:layout_height="wrap_content"
+            android:layout_height="18dp"
             android:layout_gravity="left"
             android:layout_weight="1"
             android:text="Back" />
 
         <TextView
+            android:id="@+id/textView"
             android:layout_width="match_parent"
-            android:layout_height="347dp"
-            android:layout_gravity="center"
+            android:layout_height="274dp"
             android:layout_weight="1"
-            android:gravity="center"
-            android:text="Search By Launch Date" />
+            android:text="TextView" />
 
         <EditText
-            android:id="@+id/LaunchDateTime"
+            android:id="@+id/editTextDate"
             android:layout_width="match_parent"
-            android:layout_height="293dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="time" />
+            android:inputType="date"
+            android:padding="15dp" />
 
         <Button
-            android:id="@+id/SearchLaunchDateButton"
+            android:id="@+id/SearchLaunchYearButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.9"

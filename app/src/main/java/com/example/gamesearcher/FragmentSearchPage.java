@@ -3,10 +3,12 @@ package com.example.gamesearcher;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -58,7 +60,50 @@ public class FragmentSearchPage extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_search_page, container, false);
+
+        View view = inflater.inflate(R.layout.fragment_search_page, container, false);
+
+        Button LaunchYearButton = view.findViewById(R.id.LaunchYearButton);
+
+        LaunchYearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view1) {
+                Navigation.findNavController(view).navigate(R.id.action_fragmentSearchPage_to_fragmentLaunchYear);
+            }
+        });
+        Button Platformbutton = view.findViewById(R.id.Platformbutton);
+
+        Platformbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view1) {
+                Navigation.findNavController(view).navigate(R.id.action_fragmentSearchPage_to_fragmentPlatform);
+            }
+        });
+        Button GenreButton = view.findViewById(R.id.GenreButton);
+
+        GenreButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view1) {
+                Navigation.findNavController(view).navigate(R.id.action_fragmentSearchPage_to_fragmentGenre);
+            }
+        });
+        Button CompanyButton = view.findViewById(R.id.CompanyButton);
+
+        CompanyButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view1) {
+                Navigation.findNavController(view).navigate(R.id.action_fragmentSearchPage_to_fragmentCompany);
+            }
+        });
+        Button NameGameButton = view.findViewById(R.id.NameGameButton);
+
+        NameGameButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view1) {
+                Navigation.findNavController(view).navigate(R.id.action_fragmentSearchPage_to_fragmentGameName);
+            }
+        });
+
+        return view;
     }
 }

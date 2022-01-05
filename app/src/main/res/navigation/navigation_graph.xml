@@ -9,20 +9,90 @@
         android:id="@+id/FragmentWelcomePage"
         android:name="com.example.gamesearcher.FragmentWelcomePage"
         android:label="fragment_welcome_page"
-        tools:layout="@layout/fragment_welcome_page" >
+        tools:layout="@layout/fragment_welcome_page">
         <action
-            android:id="@+id/action_WelcomeFragment_to_SearchPageFragment"
-            app:destination="@id/FragmentWelcomePage" />
+            android:id="@+id/action_FragmentWelcomePage_to_fragmentSearchPage"
+            app:destination="@id/fragmentSearchPage" />
     </fragment>
-<!--    <fragment-->
-<!--        android:id="@+id/blankFragmentThree"-->
-<!--        android:name="com.example.gamesearcher.FragmentCompany"-->
-<!--        android:label="fragment_blank_three"-->
-<!--        tools:layout="@layout/fragment_blank_three" />-->
-<!--    <fragment-->
-<!--        android:id="@+id/blankFragmentTwo"-->
-<!--        android:name="com.example.gamesearcher.BlankFragmentTwo"-->
-<!--        android:label="fragment_blank_two"-->
-<!--        tools:layout="@layout/fragment_blank_two" />-->
+    <fragment
+        android:id="@+id/fragmentSearchPage"
+        android:name="com.example.gamesearcher.FragmentSearchPage"
+        android:label="fragment_search_page"
+        tools:layout="@layout/fragment_search_page" >
+        <action
+            android:id="@+id/action_fragmentSearchPage_to_fragmentCompany"
+            app:destination="@id/fragmentCompany" />
+        <action
+            android:id="@+id/action_fragmentSearchPage_to_fragmentGameName"
+            app:destination="@id/fragmentGameName" />
+        <action
+            android:id="@+id/action_fragmentSearchPage_to_fragmentGenre"
+            app:destination="@id/fragmentGenre" />
+        <action
+            android:id="@+id/action_fragmentSearchPage_to_fragmentPlatform"
+            app:destination="@id/fragmentPlatform" />
+        <action
+            android:id="@+id/action_fragmentSearchPage_to_fragmentLaunchYear"
+            app:destination="@id/fragmentLaunchYear" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentCompany"
+        android:name="com.example.gamesearcher.FragmentCompany"
+        android:label="fragment_company"
+        tools:layout="@layout/fragment_company" >
+        <action
+            android:id="@+id/action_fragmentCompany_to_fragmentResultsPage"
+            app:destination="@id/fragmentResultsPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentGameInfoPage"
+        android:name="com.example.gamesearcher.FragmentGameInfoPage"
+        android:label="fragment_game_info_page"
+        tools:layout="@layout/fragment_game_info_page" />
+    <fragment
+        android:id="@+id/fragmentGameName"
+        android:name="com.example.gamesearcher.FragmentGameName"
+        android:label="fragment_game_name"
+        tools:layout="@layout/fragment_game_name" >
+        <action
+            android:id="@+id/action_fragmentGameName_to_fragmentResultsPage"
+            app:destination="@id/fragmentResultsPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentGenre"
+        android:name="com.example.gamesearcher.FragmentGenre"
+        android:label="fragment_genre"
+        tools:layout="@layout/fragment_genre" >
+        <action
+            android:id="@+id/action_fragmentGenre_to_fragmentResultsPage"
+            app:destination="@id/fragmentResultsPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentPlatform"
+        android:name="com.example.gamesearcher.FragmentPlatform"
+        android:label="fragment_platform"
+        tools:layout="@layout/fragment_platform" >
+        <action
+            android:id="@+id/action_fragmentPlatform_to_fragmentResultsPage"
+            app:destination="@id/fragmentResultsPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentResultsPage"
+        android:name="com.example.gamesearcher.FragmentResultsPage"
+        android:label="fragment_results_page"
+        tools:layout="@layout/fragment_results_page" >
+        <action
+            android:id="@+id/action_fragmentResultsPage_to_fragmentGameInfoPage"
+            app:destination="@id/fragmentGameInfoPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentLaunchYear"
+        android:name="com.example.gamesearcher.FragmentLaunchYear"
+        android:label="fragment_launch_year"
+        tools:layout="@layout/fragment_launch_year" >
+        <action
+            android:id="@+id/action_fragmentLaunchYear_to_fragmentResultsPage"
+            app:destination="@id/fragmentResultsPage" />
+    </fragment>
 
 </navigation>
