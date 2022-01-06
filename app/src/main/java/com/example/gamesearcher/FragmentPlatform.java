@@ -63,6 +63,7 @@ public class FragmentPlatform extends Fragment {
         View view = inflater.inflate(R.layout.fragment_platform, container, false);
 
         Button SearchPlatformButton = view.findViewById(R.id.SearchPlatformButton);
+        Button StartOverPlatformButton = view.findViewById(R.id.StartOverSearchFromPlatformButton);
 
         SearchPlatformButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,6 +71,14 @@ public class FragmentPlatform extends Fragment {
                 Navigation.findNavController(view).navigate(R.id.action_fragmentPlatform_to_fragmentResultsPage);
             }
         });
+
+        StartOverPlatformButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view1) {
+                Navigation.findNavController(view).navigate(R.id.action_fragmentPlatform_to_fragmentSearchPage);
+            }
+        });
+
         return view;
     }
 }

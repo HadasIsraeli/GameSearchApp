@@ -63,11 +63,19 @@ public class FragmentLaunchYear extends Fragment {
         View view = inflater.inflate(R.layout.fragment_launch_year, container, false);
 
         Button SearchLaunchYearButton = view.findViewById(R.id.SearchLaunchYearButton);
+        Button StartOverLaunchYearButton = view.findViewById(R.id.StartOverSearchFromLaunchYearButton);
 
         SearchLaunchYearButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view1) {
                 Navigation.findNavController(view).navigate(R.id.action_fragmentLaunchYear_to_fragmentResultsPage);
+            }
+        });
+
+        StartOverLaunchYearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view1) {
+                Navigation.findNavController(view).navigate(R.id.action_fragmentLaunchYear_to_fragmentSearchPage);
             }
         });
         return view;

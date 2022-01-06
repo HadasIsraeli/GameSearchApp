@@ -15,12 +15,12 @@
         android:padding="20dp">
 
         <Button
-            android:id="@+id/BackToSearchFromLaunchYearButton"
+            android:id="@+id/StartOverSearchFromLaunchYearButton"
             android:layout_width="74dp"
             android:layout_height="18dp"
             android:layout_gravity="left"
             android:layout_weight="1"
-            android:text="Back" />
+            android:text="StartOver" />
 
         <TextView
             android:id="@+id/textView"

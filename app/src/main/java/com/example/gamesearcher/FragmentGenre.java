@@ -63,11 +63,19 @@ public class FragmentGenre extends Fragment {
         View view = inflater.inflate(R.layout.fragment_genre, container, false);
 
         Button SearchGenreButton = view.findViewById(R.id.SearchGenreButton);
+        Button StartOverGenreButton = view.findViewById(R.id.StartOverSearchFromGenreButton);
 
         SearchGenreButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view1) {
                 Navigation.findNavController(view).navigate(R.id.action_fragmentGenre_to_fragmentResultsPage);
+            }
+        });
+
+        StartOverGenreButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view1) {
+                Navigation.findNavController(view).navigate(R.id.action_fragmentGenre_to_fragmentSearchPage);
             }
         });
         return view;

@@ -63,6 +63,7 @@ public class FragmentCompany extends Fragment {
         View view = inflater.inflate(R.layout.fragment_company, container, false);
 
         Button SearchCompanyButton = view.findViewById(R.id.SearchCompanyButton);
+        Button StartOverCompanyButton = view.findViewById(R.id.StartOverSearchFromCompanyButton);
 
         SearchCompanyButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,6 +71,14 @@ public class FragmentCompany extends Fragment {
                 Navigation.findNavController(view).navigate(R.id.action_fragmentCompany_to_fragmentResultsPage);
             }
         });
+
+        StartOverCompanyButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view1) {
+                Navigation.findNavController(view).navigate(R.id.action_fragmentCompany_to_fragmentSearchPage);
+            }
+        });
+
         return view;
     }
 }

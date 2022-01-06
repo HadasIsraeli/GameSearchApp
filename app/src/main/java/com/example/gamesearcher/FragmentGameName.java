@@ -63,6 +63,7 @@ public class FragmentGameName extends Fragment {
         View view = inflater.inflate(R.layout.fragment_game_name, container, false);
 
         Button searchNameButton = view.findViewById(R.id.searchNameButton);
+        Button StartOverNameButton = view.findViewById(R.id.StartOverSearchFromNameButton);
 
         searchNameButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,6 +71,14 @@ public class FragmentGameName extends Fragment {
                 Navigation.findNavController(view).navigate(R.id.action_fragmentGameName_to_fragmentResultsPage);
             }
         });
+
+        StartOverNameButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view1) {
+                Navigation.findNavController(view).navigate(R.id.action_fragmentGameName_to_fragmentSearchPage);
+            }
+        });
+
         return view;
     }
 }
