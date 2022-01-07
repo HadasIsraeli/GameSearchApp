@@ -1,5 +1,6 @@
-package com.example.gamesearcher;
+package com.example.gamesearcher.fragments;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -10,12 +11,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.example.gamesearcher.R;
+import com.example.gamesearcher.recyleviewgames.ResultPageActivity;
+
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link FragmentWelcomePage#newInstance} factory method to
+ * Use the {@link FragmentResultsPage#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class  FragmentWelcomePage extends Fragment {
+public class FragmentResultsPage extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -26,7 +30,7 @@ public class  FragmentWelcomePage extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public FragmentWelcomePage() {
+    public FragmentResultsPage() {
         // Required empty public constructor
     }
 
@@ -36,11 +40,11 @@ public class  FragmentWelcomePage extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment FragmentWelcomePage.
+     * @return A new instance of fragment FragmentResultsPage.
      */
     // TODO: Rename and change types and number of parameters
-    public static FragmentWelcomePage newInstance(String param1, String param2) {
-        FragmentWelcomePage fragment = new FragmentWelcomePage();
+    public static FragmentResultsPage newInstance(String param1, String param2) {
+        FragmentResultsPage fragment = new FragmentResultsPage();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -60,19 +64,18 @@ public class  FragmentWelcomePage extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_welcome_page, container, false);
-
-        Button StartSearchbutton = view.findViewById(R.id.startSearchButton);
+        View view = inflater.inflate(R.layout.fragment_results_page, container, false);
 
 
-        StartSearchbutton.setOnClickListener(new View.OnClickListener() {
+        Button StartOverResultsButton = view.findViewById(R.id.StartOverSearchFromResults);
+
+        StartOverResultsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view1) {
-                Navigation.findNavController(view).navigate(R.id.action_FragmentWelcomePage_to_fragmentSearchPage);
+                Navigation.findNavController(view).navigate(R.id.action_fragmentResultsPage_to_fragmentSearchPage);
             }
         });
 
         return view;
-        }
+    }
 }

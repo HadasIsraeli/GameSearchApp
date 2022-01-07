@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/FragmentWelcomePage"
-        android:name="com.example.gamesearcher.FragmentWelcomePage"
+        android:name="com.example.gamesearcher.fragments.FragmentWelcomePage"
         android:label="fragment_welcome_page"
         tools:layout="@layout/fragment_welcome_page">
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/fragmentSearchPage"
-        android:name="com.example.gamesearcher.FragmentSearchPage"
+        android:name="com.example.gamesearcher.fragments.FragmentSearchPage"
         android:label="fragment_search_page"
         tools:layout="@layout/fragment_search_page" >
         <action
@@ -37,7 +37,7 @@
     </fragment>
     <fragment
         android:id="@+id/fragmentCompany"
-        android:name="com.example.gamesearcher.FragmentCompany"
+        android:name="com.example.gamesearcher.fragments.FragmentCompany"
         android:label="fragment_company"
         tools:layout="@layout/fragment_company" >
         <action
@@ -49,7 +49,7 @@
     </fragment>
     <fragment
         android:id="@+id/fragmentGameInfoPage"
-        android:name="com.example.gamesearcher.FragmentGameInfoPage"
+        android:name="com.example.gamesearcher.fragments.FragmentGameInfoPage"
         android:label="fragment_game_info_page"
         tools:layout="@layout/fragment_game_info_page" >
         <action
@@ -58,7 +58,7 @@
     </fragment>
     <fragment
         android:id="@+id/fragmentGameName"
-        android:name="com.example.gamesearcher.FragmentGameName"
+        android:name="com.example.gamesearcher.fragments.FragmentGameName"
         android:label="fragment_game_name"
         tools:layout="@layout/fragment_game_name" >
         <action
@@ -70,7 +70,7 @@
     </fragment>
     <fragment
         android:id="@+id/fragmentGenre"
-        android:name="com.example.gamesearcher.FragmentGenre"
+        android:name="com.example.gamesearcher.fragments.FragmentGenre"
         android:label="fragment_genre"
         tools:layout="@layout/fragment_genre" >
         <action
@@ -82,7 +82,7 @@
     </fragment>
     <fragment
         android:id="@+id/fragmentPlatform"
-        android:name="com.example.gamesearcher.FragmentPlatform"
+        android:name="com.example.gamesearcher.fragments.FragmentPlatform"
         android:label="fragment_platform"
         tools:layout="@layout/fragment_platform" >
         <action
@@ -94,7 +94,7 @@
     </fragment>
     <fragment
         android:id="@+id/fragmentResultsPage"
-        android:name="com.example.gamesearcher.FragmentResultsPage"
+        android:name="com.example.gamesearcher.fragments.FragmentResultsPage"
         android:label="fragment_results_page"
         tools:layout="@layout/fragment_results_page" >
         <action
@@ -106,7 +106,7 @@
     </fragment>
     <fragment
         android:id="@+id/fragmentLaunchYear"
-        android:name="com.example.gamesearcher.FragmentLaunchYear"
+        android:name="com.example.gamesearcher.fragments.FragmentLaunchYear"
         android:label="fragment_launch_year"
         tools:layout="@layout/fragment_launch_year" >
         <action

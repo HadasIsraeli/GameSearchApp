@@ -1,4 +1,4 @@
-package com.example.gamesearcher;
+package com.example.gamesearcher.fragments;
 
 import android.os.Bundle;
 
@@ -10,12 +10,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.example.gamesearcher.R;
+
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link FragmentLaunchYear#newInstance} factory method to
+ * Use the {@link FragmentPlatform#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class FragmentLaunchYear extends Fragment {
+public class FragmentPlatform extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -26,7 +28,7 @@ public class FragmentLaunchYear extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public FragmentLaunchYear() {
+    public FragmentPlatform() {
         // Required empty public constructor
     }
 
@@ -36,11 +38,11 @@ public class FragmentLaunchYear extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment FragmentLaunchDate.
+     * @return A new instance of fragment FragmentPlatform.
      */
     // TODO: Rename and change types and number of parameters
-    public static FragmentLaunchYear newInstance(String param1, String param2) {
-        FragmentLaunchYear fragment = new FragmentLaunchYear();
+    public static FragmentPlatform newInstance(String param1, String param2) {
+        FragmentPlatform fragment = new FragmentPlatform();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -60,24 +62,25 @@ public class FragmentLaunchYear extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_launch_year, container, false);
+        View view = inflater.inflate(R.layout.fragment_platform, container, false);
 
-        Button SearchLaunchYearButton = view.findViewById(R.id.SearchLaunchYearButton);
-        Button StartOverLaunchYearButton = view.findViewById(R.id.StartOverSearchFromLaunchYearButton);
+        Button SearchPlatformButton = view.findViewById(R.id.SearchPlatformButton);
+        Button StartOverPlatformButton = view.findViewById(R.id.StartOverSearchFromPlatformButton);
 
-        SearchLaunchYearButton.setOnClickListener(new View.OnClickListener() {
+        SearchPlatformButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view1) {
-                Navigation.findNavController(view).navigate(R.id.action_fragmentLaunchYear_to_fragmentResultsPage);
+                Navigation.findNavController(view).navigate(R.id.action_fragmentPlatform_to_fragmentResultsPage);
             }
         });
 
-        StartOverLaunchYearButton.setOnClickListener(new View.OnClickListener() {
+        StartOverPlatformButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view1) {
-                Navigation.findNavController(view).navigate(R.id.action_fragmentLaunchYear_to_fragmentSearchPage);
+                Navigation.findNavController(view).navigate(R.id.action_fragmentPlatform_to_fragmentSearchPage);
             }
         });
+
         return view;
     }
 }

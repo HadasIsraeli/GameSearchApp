@@ -4,7 +4,7 @@
     android:id="@+id/FragmentSearchPage"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FragmentSearchPage">
+    tools:context=".fragments.FragmentSearchPage">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -36,7 +36,7 @@
             android:paddingStart="10dp"
             android:paddingEnd="10dp"
             android:paddingBottom="14dp"
-            android:text="Name game" />
+            android:text="Game Name" />
 
         <Button
             android:id="@+id/GenreButton"

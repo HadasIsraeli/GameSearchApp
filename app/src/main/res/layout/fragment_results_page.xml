@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FragmentResultsPage">
+    tools:context=".fragments.FragmentResultsPage">
 
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
@@ -17,120 +17,27 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
-            android:text="StartOver" />
+            android:text="Start Over" />
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="190dp"
+            android:layout_height="59dp"
             android:layout_gravity="center"
             android:gravity="center"
             android:padding="10dp"
-            android:text='Game Search Results "GameName"' />
+            android:text="Search Results" />
 
-        <LinearLayout
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
             android:layout_width="match_parent"
-            android:layout_height="165dp"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:padding="20dp">
-
-            <ImageButton
-                android:id="@+id/imageButton2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:padding="10dp"
-                android:src="@android:drawable/btn_star_big_on" />
-
-            <ImageButton
-                android:id="@+id/imageButton3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:padding="10dp"
-                android:src="@android:drawable/btn_star_big_on" />
+            android:layout_height="match_parent">
 
             <ImageButton
                 android:id="@+id/imageButton"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:padding="10dp"
-                android:src="@android:drawable/btn_star_big_on" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="170dp"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:padding="20dp">
-
-            <ImageButton
-                android:id="@+id/imageButton4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:padding="10dp"
-                android:src="@android:drawable/btn_star_big_on" />
-
-            <ImageButton
-                android:id="@+id/imageButton5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:padding="10dp"
-                android:src="@android:drawable/btn_star_big_on" />
-
-            <ImageButton
-                android:id="@+id/imageButton6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:padding="10dp"
-                android:src="@android:drawable/btn_star_big_on" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:padding="20dp">
-
-            <ImageButton
-                android:id="@+id/imageButton7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:padding="10dp"
-                android:src="@android:drawable/btn_star_big_on" />
-
-            <ImageButton
-                android:id="@+id/imageButton8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:padding="10dp"
-                android:src="@android:drawable/btn_star_big_on" />
-
-            <ImageButton
-                android:id="@+id/imageButton9"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:padding="10dp"
-                android:src="@android:drawable/btn_star_big_on" />
-        </LinearLayout>
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_launcher_background" />
+        </androidx.cardview.widget.CardView>
 
     </LinearLayout>
 

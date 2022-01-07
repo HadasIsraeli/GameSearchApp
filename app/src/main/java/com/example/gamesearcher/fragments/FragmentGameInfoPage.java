@@ -1,4 +1,4 @@
-package com.example.gamesearcher;
+package com.example.gamesearcher.fragments;
 
 import android.os.Bundle;
 
@@ -10,12 +10,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.example.gamesearcher.R;
+
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link FragmentCompany#newInstance} factory method to
+ * Use the {@link FragmentGameInfoPage#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class FragmentCompany extends Fragment {
+public class FragmentGameInfoPage extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -26,7 +28,7 @@ public class FragmentCompany extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public FragmentCompany() {
+    public FragmentGameInfoPage() {
         // Required empty public constructor
     }
 
@@ -36,11 +38,11 @@ public class FragmentCompany extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment FragmentCompany.
+     * @return A new instance of fragment FragmentGameInfoPage.
      */
     // TODO: Rename and change types and number of parameters
-    public static FragmentCompany newInstance(String param1, String param2) {
-        FragmentCompany fragment = new FragmentCompany();
+    public static FragmentGameInfoPage newInstance(String param1, String param2) {
+        FragmentGameInfoPage fragment = new FragmentGameInfoPage();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -60,22 +62,15 @@ public class FragmentCompany extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_company, container, false);
+        // Inflate the layout for this fragment
+        View view = inflater.inflate(R.layout.fragment_game_info_page, container, false);
 
-        Button SearchCompanyButton = view.findViewById(R.id.SearchCompanyButton);
-        Button StartOverCompanyButton = view.findViewById(R.id.StartOverSearchFromCompanyButton);
+        Button StartOverInfoButton = view.findViewById(R.id.StartOverSearchFromInfoButton);
 
-        SearchCompanyButton.setOnClickListener(new View.OnClickListener() {
+        StartOverInfoButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view1) {
-                Navigation.findNavController(view).navigate(R.id.action_fragmentCompany_to_fragmentResultsPage);
-            }
-        });
-
-        StartOverCompanyButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view1) {
-                Navigation.findNavController(view).navigate(R.id.action_fragmentCompany_to_fragmentSearchPage);
+                Navigation.findNavController(view).navigate(R.id.action_fragmentGameInfoPage_to_fragmentSearchPage);
             }
         });
 
