@@ -1,26 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
     tools:context=".fragments.FragmentLaunchYear">
 
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
         android:orientation="vertical"
-        android:padding="20dp">
+        android:padding="10dp">
 
         <Button
             android:id="@+id/StartOverSearchFromLaunchYearButton"
-            android:layout_width="74dp"
-            android:layout_height="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="left"
-            android:layout_weight="1"
             android:text="StartOver" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="459dp"
+        android:orientation="vertical"
+        android:padding="20dp">
 
         <TextView
             android:id="@+id/textView"
@@ -32,19 +41,26 @@
         <EditText
             android:id="@+id/editTextDate"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="181dp"
             android:layout_weight="1"
             android:ems="10"
             android:inputType="date"
             android:padding="15dp" />
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
         <Button
             android:id="@+id/SearchLaunchYearButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0.9"
-            android:padding="20dp"
+            android:padding="10dp"
             android:text="search" />
     </LinearLayout>
 
-</FrameLayout>
+</LinearLayout>

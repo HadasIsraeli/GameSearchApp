@@ -33,8 +33,8 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
            super(itemView);
 
            cardView = (CardView) itemView.findViewById(R.id.card_view);
-//           textViewName = ( TextView) itemView.findViewById(R.id.textViewName);
-//           textViewVersion = ( TextView) itemView.findViewById(R.id.textViewVersion);
+           textViewName = ( TextView) itemView.findViewById(R.id.textViewName);
+           textViewVersion = ( TextView) itemView.findViewById(R.id.textViewVersion);
            imageViewIcon = (ImageView) itemView.findViewById(R.id.imageButton);
 
        }
@@ -45,7 +45,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int i) {
 
-        View view = LayoutInflater.from(parent.getContext() ).inflate(R.layout.fragment_results_page , parent ,false);
+        View view = LayoutInflater.from(parent.getContext() ).inflate(R.layout.my_game_view , parent ,false);
 
         MyViewHolder myViewHolder = new MyViewHolder(view);
 
@@ -55,16 +55,17 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder viewHolder,  int listPosition) {
 
-//        TextView textViewName = viewHolder.textViewName;
-//        TextView textViewVersion = viewHolder.textViewVersion;
+        TextView textViewName = viewHolder.textViewName;
+        TextView textViewVersion = viewHolder.textViewVersion;
         ImageView imageView = viewHolder.imageViewIcon;
         CardView cardView = viewHolder.cardView;
 
-//        textViewName.setText(dataSet.get(listPosition).getName());
-//        textViewVersion.setText(dataSet.get(listPosition).getVersion());
+        textViewName.setText(dataSet.get(listPosition).getName());
+        textViewVersion.setText(dataSet.get(listPosition).getVersion());
         imageView.setImageResource(dataSet.get(listPosition).getImage());
 
-        
+
+
     }
 
     @Override

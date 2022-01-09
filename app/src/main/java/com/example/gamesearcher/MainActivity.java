@@ -1,11 +1,6 @@
 package com.example.gamesearcher;
-
 import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;
 import android.os.Bundle;
-
-import com.example.gamesearcher.recyleviewgames.ResultPageActivity;
 
 public class MainActivity extends AppCompatActivity {
 

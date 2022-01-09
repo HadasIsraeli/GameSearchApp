@@ -1,10 +1,12 @@
 package com.example.gamesearcher.fragments;
 
-import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
+import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,14 +14,19 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.example.gamesearcher.R;
-import com.example.gamesearcher.recyleviewgames.ResultPageActivity;
+import com.example.gamesearcher.recyleviewgames.CustomAdapter;
+import com.example.gamesearcher.recyleviewgames.DataModel;
+import com.example.gamesearcher.recyleviewgames.MyData;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link FragmentResultsPage#newInstance} factory method to
- * create an instance of this fragment.
- */
+import java.util.ArrayList;
+
+
 public class FragmentResultsPage extends Fragment {
+
+    private ArrayList<DataModel> dataSet;
+    private RecyclerView recyclerView;
+    private LinearLayoutManager layoutManager;
+    private CustomAdapter addapter;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -34,14 +41,6 @@ public class FragmentResultsPage extends Fragment {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment FragmentResultsPage.
-     */
     // TODO: Rename and change types and number of parameters
     public static FragmentResultsPage newInstance(String param1, String param2) {
         FragmentResultsPage fragment = new FragmentResultsPage();
@@ -66,9 +65,24 @@ public class FragmentResultsPage extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_results_page, container, false);
 
+        recyclerView=view.findViewById(R.id.my_recycle_view);
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
+        recyclerView.setLayoutManager(linearLayoutManager);
+        recyclerView.setItemAnimator(new DefaultItemAnimator());
+        dataSet = new ArrayList<DataModel>();
+        for (int i = 0; i < MyData.nameArray.length; i++) {
+            dataSet.add(new DataModel(
+                    MyData.nameArray[i],
+                    MyData.versionArray[i],
+                    MyData.id_[i],
+                    MyData.drawableArray[i]
+            ));
+        }
+        addapter = new CustomAdapter(dataSet);
+        recyclerView.setAdapter(addapter);
+
 
         Button StartOverResultsButton = view.findViewById(R.id.StartOverSearchFromResults);
-
         StartOverResultsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view1) {
