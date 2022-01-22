@@ -2,6 +2,7 @@ package com.example.gamesearcher.fragments;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
@@ -9,8 +10,24 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Toast;
+import android.widget.EditText;
+import android.widget.TextView;
 
+import com.example.gamesearcher.Game;
+import com.example.gamesearcher.MainActivity;
 import com.example.gamesearcher.R;
+import com.example.gamesearcher.recyleviewgames.DataModel;
+import com.example.gamesearcher.recyleviewgames.ResultPageActivity;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -29,8 +46,10 @@ public class FragmentCompany extends Fragment {
     private String mParam2;
 
     public FragmentCompany() {
-        // Required empty public constructor
+
     }
+
+
 
     /**
      * Use this factory method to create a new instance of
@@ -53,6 +72,7 @@ public class FragmentCompany extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
@@ -66,10 +86,40 @@ public class FragmentCompany extends Fragment {
 
         Button SearchCompanyButton = view.findViewById(R.id.SearchCompanyButton);
         Button StartOverCompanyButton = view.findViewById(R.id.StartOverSearchFromCompanyButton);
+//        Button ActivisionCheckBox = view.findViewById(R.id.ActivisionCheckBox);
+//        Button CPRCheckBox = view.findViewById(R.id.CPRCheckBox);
+//        Button ForzaCheckBox = view.findViewById(R.id.ForzaCheckBox);
+//        Button EACheckBox = view.findViewById(R.id.EACheckBox);
+//        Button RockstarCheckBox = view.findViewById(R.id.RockstarCheckBox);
+//        Button TwoKCheckBox = view.findViewById(R.id.TwoKCheckBox);
+//        Button RiotCheckBox = view.findViewById(R.id.RiotCheckBox);
 
         SearchCompanyButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view1) {
+                // Need to be modified!!!!!!
+
+//                FirebaseDatabase db = FirebaseDatabase.getInstance();
+//                DatabaseReference myRef = db.getReference("Games");
+//                Game game = new Game();
+//                myRef.addValueEventListener(new ValueEventListener() {
+//                    @Override
+//                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+//                        for(DataSnapshot item_snapshot:snapshot.getChildren()){
+//
+//                            Game game = item_snapshot.getValue(Game.class);
+//                            Toast.makeText(getActivity(),game.getCompany(),Toast.LENGTH_SHORT).show();
+//
+//                            if (game.getCompany() == "Activision") {
+//
+//                            }
+//                        }
+//                    }
+//
+//                    @Override
+//                    public void onCancelled(@NonNull DatabaseError error) {
+//                    }
+//                });
                 Navigation.findNavController(view).navigate(R.id.action_fragmentCompany_to_fragmentResultsPage);
             }
         });
