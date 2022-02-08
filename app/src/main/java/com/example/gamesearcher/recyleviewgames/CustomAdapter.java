@@ -34,7 +34,7 @@ public class CustomAdapter extends FirebaseRecyclerAdapter<DataModel, CustomAdap
 //        holder.imageViewGame.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
-//                AppCompatActivity activity = (AppCompatActivity)view.getContext();
+//                AppCompatActivity activity = (AppCompatActivity) view.getContext();
 //                activity.getSupportFragmentManager().beginTransaction().replace(R.id.wrapper)
 //            }
 //        });
@@ -44,10 +44,7 @@ public class CustomAdapter extends FirebaseRecyclerAdapter<DataModel, CustomAdap
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.my_game_view, parent, false);
-        MyViewHolder myViewHolder = new MyViewHolder(view);
-
-        return myViewHolder;
-
+        return new MyViewHolder(view);
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
