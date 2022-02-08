@@ -7,7 +7,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="20dp"
-    tools:context=".fragments.FragmentResultsPage">
+    tools:context=".fragments.FragmentResultsPage"
+    android:fontFamily="sans-serif-black">
 
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
@@ -17,9 +18,10 @@
 
         <Button
             android:id="@+id/StartOverSearchFromResults"
-            android:layout_width="wrap_content"
+            android:layout_width="105dp"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
+            android:background="@drawable/design_button"
             android:text="Start Over" />
 
     </LinearLayout>
@@ -36,7 +38,8 @@
             android:layout_gravity="center"
             android:gravity="center"
             android:padding="10dp"
-            android:text="Search Results" />
+            android:text="Search Results"
+            android:textColor="@color/teal_200" />
     </LinearLayout>
 
     <LinearLayout

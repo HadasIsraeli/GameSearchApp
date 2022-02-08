@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="10dp"
-    tools:context=".fragments.FragmentCompany">
+    tools:context=".fragments.FragmentCompany"
+    android:fontFamily="sans-serif-black">
 
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
@@ -15,9 +16,10 @@
 
         <Button
             android:id="@+id/StartOverSearchFromCompanyButton"
-            android:layout_width="wrap_content"
+            android:layout_width="105dp"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
+            android:background="@drawable/design_button"
             android:gravity="center"
             android:padding="10dp"
             android:text="StartOver" />
@@ -37,7 +39,8 @@
             android:layout_gravity="center"
             android:gravity="center"
             android:padding="5dp"
-            android:text="choose the Game company" />
+            android:text="choose the Game company"
+            android:textColor="@color/teal_200" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -56,7 +59,8 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:padding="15dp"
-                android:text="Activision" />
+                android:text="Activision"
+                android:textColor="@color/teal_200" />
 
             <CheckBox
                 android:id="@+id/CPRCheckBox"
@@ -66,7 +70,8 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:padding="15dp"
-                android:text="CD Projekt RED" />
+                android:text="CD Projekt RED"
+                android:textColor="@color/teal_200" />
 
         </LinearLayout>
 
@@ -87,7 +92,8 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:padding="15dp"
-                android:text="Forza Motorsport" />
+                android:text="Forza Motorsport"
+                android:textColor="@color/teal_200" />
 
             <CheckBox
                 android:id="@+id/EACheckBox"
@@ -97,7 +103,8 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:padding="15dp"
-                android:text="EA" />
+                android:text="EA"
+                android:textColor="@color/teal_200" />
         </LinearLayout>
 
         <LinearLayout
@@ -117,7 +124,8 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:padding="15dp"
-                android:text="Rockstar Games" />
+                android:text="Rockstar Games"
+                android:textColor="@color/teal_200" />
 
             <CheckBox
                 android:id="@+id/TwoKCheckBox"
@@ -127,7 +135,8 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:padding="15dp"
-                android:text="2K Sports" />
+                android:text="2K Sports"
+                android:textColor="@color/teal_200" />
 
         </LinearLayout>
 
@@ -148,13 +157,15 @@
                 android:layout_weight="1"
                 android:gravity="center|left"
                 android:padding="15dp"
-                android:text="RIOT Games" />
+                android:text="RIOT Games"
+                android:textColor="@color/teal_200" />
         </LinearLayout>
 
         <Button
             android:id="@+id/SearchCompanyButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/design_button"
             android:text="search" />
 
     </LinearLayout>

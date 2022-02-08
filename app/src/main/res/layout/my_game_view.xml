@@ -6,37 +6,34 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:fontFamily="sans-serif-black"
     tools:context=".recyleviewgames.ResultPageActivity">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@color/design_default_color_background"
             android:orientation="vertical"
-            android:background="@color/design_default_color_background">
+            android:padding="15dp">
 
-            <ImageButton
-                android:id="@+id/imageButton"
+            <ImageView
+                android:id="@+id/imageViewGame"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/ic_launcher_foreground"
-                tools:ignore="VectorDrawableCompat" />
+                android:layout_height="379dp"
+                app:srcCompat="@drawable/ic_launcher_foreground" />
 
             <TextView
                 android:id="@+id/textViewName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="textViewName" />
+                android:text="textViewName"
+                android:textColor="@color/teal_200" />
 
-            <TextView
-                android:id="@+id/textViewVersion"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="textViewVersion" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 </LinearLayout>
