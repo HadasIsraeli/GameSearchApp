@@ -52,7 +52,7 @@
             android:padding="15dp">
 
             <CheckBox
-                android:id="@+id/ActionCheckBox"
+                android:id="@+id/ActivisionCheckBox"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
@@ -63,7 +63,7 @@
                 android:textColor="@color/teal_200" />
 
             <CheckBox
-                android:id="@+id/RacingCheckBox"
+                android:id="@+id/CPRCheckBox"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
@@ -85,7 +85,7 @@
             android:padding="15dp">
 
             <CheckBox
-                android:id="@+id/BattleRoyaleCheckBox"
+                android:id="@+id/ForzaCheckBox"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
@@ -96,7 +96,7 @@
                 android:textColor="@color/teal_200" />
 
             <CheckBox
-                android:id="@+id/FirstPersonShooterCheckBox"
+                android:id="@+id/EACheckBox"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
@@ -117,7 +117,7 @@
             android:padding="15dp">
 
             <CheckBox
-                android:id="@+id/AdventureCheckBox"
+                android:id="@+id/RockstarCheckBox"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
@@ -128,7 +128,7 @@
                 android:textColor="@color/teal_200" />
 
             <CheckBox
-                android:id="@+id/RoleplayingCheckBox"
+                android:id="@+id/TwoKCheckBox"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
@@ -150,7 +150,7 @@
             android:padding="15dp">
 
             <CheckBox
-                android:id="@+id/SportsCheckBox"
+                android:id="@+id/RiotCheckBox"
                 android:layout_width="match_parent"
                 android:layout_height="79dp"
                 android:layout_gravity="center"
