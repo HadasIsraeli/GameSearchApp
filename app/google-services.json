@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "66620295819",
+    "firebase_url": "https://android1-gamesdb-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "android1-gamesdb",
+    "storage_bucket": "android1-gamesdb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:66620295819:android:7ef2e12dbf18b793b4228e",
+        "android_client_info": {
+          "package_name": "com.example.gamesearcher"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "66620295819-c69h1on6c1p0drj2d4nh2fogv9ickcja.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBx-enm3plX4OqmETyaNlEgnLfEUBh6v9k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "66620295819-c69h1on6c1p0drj2d4nh2fogv9ickcja.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

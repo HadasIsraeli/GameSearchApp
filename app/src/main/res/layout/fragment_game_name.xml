@@ -6,7 +6,8 @@
     android:layout_gravity="left"
     android:orientation="vertical"
     android:padding="20dp"
-    tools:context=".fragments.FragmentGameName">
+    tools:context=".fragments.FragmentGameName"
+    android:fontFamily="sans-serif-black">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -21,9 +22,10 @@
 
         <Button
             android:id="@+id/StartOverSearchFromNameButton"
-            android:layout_width="wrap_content"
+            android:layout_width="105dp"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
+            android:background="@drawable/design_button"
             android:gravity="center"
             android:text="Start Over" />
 
@@ -42,7 +44,8 @@
             android:layout_gravity="center"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="search your game by Name" />
+            android:text="search your game by Name"
+            android:textColor="@color/teal_200" />
 
         <EditText
             android:id="@+id/TextGameName"
@@ -53,7 +56,8 @@
             android:ems="10"
             android:gravity="center"
             android:inputType="textPersonName"
-            android:text="Name" />
+            android:text="Name"
+            android:textColor="@color/teal_200" />
 
     </LinearLayout>
 
@@ -68,6 +72,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:background="@drawable/design_button"
             android:gravity="center"
             android:text="search" />
     </LinearLayout>

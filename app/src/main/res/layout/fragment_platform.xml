@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="20dp"
-    tools:context=".fragments.FragmentPlatform">
+    tools:context=".fragments.FragmentPlatform"
+    android:fontFamily="sans-serif-black">
 
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
@@ -17,9 +18,10 @@
 
         <Button
             android:id="@+id/StartOverSearchFromPlatformButton"
-            android:layout_width="wrap_content"
+            android:layout_width="105dp"
             android:layout_height="wrap_content"
             android:layout_gravity="top|left"
+            android:background="@drawable/design_button"
             android:gravity="center"
             android:text="Start Over" />
     </LinearLayout>
@@ -34,7 +36,8 @@
             android:id="@+id/GamePlatformText"
             android:layout_width="match_parent"
             android:layout_height="108dp"
-            android:text="choose the Game Platform" />
+            android:text="choose the Game Platform"
+            android:textColor="@color/teal_200" />
 
         <CheckBox
             android:id="@+id/PSCheckBox"
@@ -44,7 +47,8 @@
             android:layout_weight="1"
             android:gravity="center"
             android:padding="15dp"
-            android:text="PS" />
+            android:text="PS"
+            android:textColor="@color/teal_200" />
 
         <CheckBox
             android:id="@+id/XboxCheckBox"
@@ -54,7 +58,8 @@
             android:layout_weight="1"
             android:gravity="center"
             android:padding="15dp"
-            android:text="Xbox" />
+            android:text="Xbox"
+            android:textColor="@color/teal_200" />
 
         <CheckBox
             android:id="@+id/PCCheckBox"
@@ -64,7 +69,8 @@
             android:layout_weight="1"
             android:gravity="center"
             android:padding="15dp"
-            android:text="PC" />
+            android:text="PC"
+            android:textColor="@color/teal_200" />
 
         <CheckBox
             android:id="@+id/NitendoCheckBox"
@@ -74,7 +80,8 @@
             android:layout_weight="1"
             android:gravity="center"
             android:padding="15dp"
-            android:text="Nitendo" />
+            android:text="Nitendo"
+            android:textColor="@color/teal_200" />
 
     </LinearLayout>
 
@@ -87,6 +94,7 @@
             android:id="@+id/SearchPlatformButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/design_button"
             android:text="search" />
     </LinearLayout>
 

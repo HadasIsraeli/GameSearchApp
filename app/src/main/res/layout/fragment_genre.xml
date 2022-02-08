@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="10dp"
-    tools:context=".fragments.FragmentGenre">
+    tools:context=".fragments.FragmentGenre"
+    android:fontFamily="sans-serif-black">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -18,9 +19,10 @@
 
         <Button
             android:id="@+id/StartOverSearchFromGenreButton"
-            android:layout_width="wrap_content"
+            android:layout_width="105dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="@drawable/design_button"
             android:text="StartOver" />
     </LinearLayout>
 
@@ -38,7 +40,8 @@
             android:layout_height="88dp"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="choose the Game Genre" />
+            android:text="choose the Game Genre"
+            android:textColor="@color/teal_200" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -57,7 +60,8 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:padding="15dp"
-                android:text="Action" />
+                android:text="Action"
+                android:textColor="@color/teal_200" />
 
             <CheckBox
                 android:id="@+id/SportsCheckBox"
@@ -67,7 +71,8 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:padding="15dp"
-                android:text="Sports" />
+                android:text="Sports"
+                android:textColor="@color/teal_200" />
         </LinearLayout>
 
         <LinearLayout
@@ -87,7 +92,8 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:padding="15dp"
-                android:text="Adventure" />
+                android:text="Adventure"
+                android:textColor="@color/teal_200" />
 
             <CheckBox
                 android:id="@+id/RoleplayingCheckBox"
@@ -97,7 +103,8 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:padding="15dp"
-                android:text="Roleplaying" />
+                android:text="Roleplaying"
+                android:textColor="@color/teal_200" />
 
         </LinearLayout>
 
@@ -118,7 +125,8 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:padding="15dp"
-                android:text="Battle royale" />
+                android:text="Battle royale"
+                android:textColor="@color/teal_200" />
 
             <CheckBox
                 android:id="@+id/FirstPersonShooterCheckBox"
@@ -128,7 +136,8 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:padding="15dp"
-                android:text="first person shooter" />
+                android:text="first person shooter"
+                android:textColor="@color/teal_200" />
         </LinearLayout>
 
         <LinearLayout
@@ -148,7 +157,8 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:padding="15dp"
-                android:text="Racing" />
+                android:text="Racing"
+                android:textColor="@color/teal_200" />
 
             <CheckBox
                 android:id="@+id/FantasyCheckBox"
@@ -157,7 +167,8 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="Fantasy" />
+                android:text="Fantasy"
+                android:textColor="@color/teal_200" />
 
         </LinearLayout>
 
@@ -166,6 +177,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="@drawable/design_button"
             android:minHeight="48dp"
             android:text="search" />
 

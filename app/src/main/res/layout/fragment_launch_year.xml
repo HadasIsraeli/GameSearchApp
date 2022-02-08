@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="10dp"
-    tools:context=".fragments.FragmentLaunchYear">
+    tools:context=".fragments.FragmentLaunchYear"
+    android:fontFamily="sans-serif-black">
 
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
@@ -18,9 +19,10 @@
 
         <Button
             android:id="@+id/StartOverSearchFromLaunchYearButton"
-            android:layout_width="wrap_content"
+            android:layout_width="105dp"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
+            android:background="@drawable/design_button"
             android:text="StartOver" />
 
     </LinearLayout>
@@ -36,7 +38,8 @@
             android:layout_width="match_parent"
             android:layout_height="274dp"
             android:layout_weight="1"
-            android:text="TextView" />
+            android:text="TextView"
+            android:textColor="@color/teal_200" />
 
         <EditText
             android:id="@+id/editTextDate"
@@ -45,7 +48,8 @@
             android:layout_weight="1"
             android:ems="10"
             android:inputType="date"
-            android:padding="15dp" />
+            android:padding="15dp"
+            android:textColor="@color/teal_200" />
 
     </LinearLayout>
 
@@ -59,6 +63,7 @@
             android:id="@+id/SearchLaunchYearButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/design_button"
             android:padding="10dp"
             android:text="search" />
     </LinearLayout>
