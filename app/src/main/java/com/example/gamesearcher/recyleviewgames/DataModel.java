@@ -4,86 +4,86 @@ import com.example.gamesearcher.R;
 
 public class DataModel {
 
-    String company, gameName, gameTrailer, genre, image, launchDate, platform, webSite;
+    String Company, GameName, GameTrailer, Genre, Image, LaunchDate, Platform, WebSite;
 
     public DataModel() {
     }
 
     public DataModel(String company, String gameName, String gameTrailer, String genre, String image, String launchDate, String platform, String webSite) {
-        this.company = company;
-        this.gameName = gameName;
-        this.gameTrailer = gameTrailer;
-        this.genre = genre;
-        this.image = image;
-        this.launchDate = launchDate;
-        this.platform = platform;
-        this.webSite = webSite;
+        Company = company;
+        GameName = gameName;
+        GameTrailer = gameTrailer;
+        Genre = genre;
+        Image = image;
+        LaunchDate = launchDate;
+        Platform = platform;
+        WebSite = webSite;
     }
 
     public String getCompany() {
-        return company;
+        return Company;
     }
 
     public void setCompany(String company) {
-        this.company = company;
+        Company = company;
     }
 
     public String getGameName() {
-        return gameName;
+        return GameName;
     }
 
     public void setGameName(String gameName) {
-        this.gameName = gameName;
+        GameName = gameName;
     }
 
     public String getGameTrailer() {
-        return gameTrailer;
+        return GameTrailer;
     }
 
     public void setGameTrailer(String gameTrailer) {
-        this.gameTrailer = gameTrailer;
+        GameTrailer = gameTrailer;
     }
 
     public String getGenre() {
-        return genre;
+        return Genre;
     }
 
     public void setGenre(String genre) {
-        this.genre = genre;
+        Genre = genre;
     }
 
     public String getImage() {
-        return image;
+        return Image;
     }
 
     public void setImage(String image) {
-        this.image = image;
+        Image = image;
     }
 
     public String getLaunchDate() {
-        return launchDate;
+        return LaunchDate;
     }
 
     public void setLaunchDate(String launchDate) {
-        this.launchDate = launchDate;
+        LaunchDate = launchDate;
     }
 
     public String getPlatform() {
-        return platform;
+        return Platform;
     }
 
     public void setPlatform(String platform) {
-        this.platform = platform;
+        Platform = platform;
     }
 
     public String getWebSite() {
-        return webSite;
+        return WebSite;
     }
 
     public void setWebSite(String webSite) {
-        this.webSite = webSite;
+        WebSite = webSite;
     }
-    //    String name;
+//    String name;
 //    String version;
 //    int id_;
 //    int image;
