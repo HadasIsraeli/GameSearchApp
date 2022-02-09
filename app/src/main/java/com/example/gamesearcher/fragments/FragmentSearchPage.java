@@ -71,7 +71,9 @@ public class FragmentSearchPage extends Fragment {
         LaunchYearButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view1) {
-                Navigation.findNavController(view).navigate(R.id.action_fragmentSearchPage_to_fragmentLaunchYear);
+                FragmentLaunchYear fragment = new FragmentLaunchYear();
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView,fragment).commit();
+                //Navigation.findNavController(view).navigate(R.id.action_fragmentSearchPage_to_fragmentLaunchYear);
             }
         });
         Button Platformbutton = view.findViewById(R.id.Platformbutton);
@@ -79,7 +81,9 @@ public class FragmentSearchPage extends Fragment {
         Platformbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view1) {
-                Navigation.findNavController(view).navigate(R.id.action_fragmentSearchPage_to_fragmentPlatform);
+                FragmentPlatform fragment = new FragmentPlatform();
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView,fragment).commit();
+                //Navigation.findNavController(view).navigate(R.id.action_fragmentSearchPage_to_fragmentPlatform);
             }
         });
         Button GenreButton = view.findViewById(R.id.GenreButton);
@@ -87,7 +91,9 @@ public class FragmentSearchPage extends Fragment {
         GenreButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view1) {
-                Navigation.findNavController(view).navigate(R.id.action_fragmentSearchPage_to_fragmentGenre);
+                FragmentGenre fragment = new FragmentGenre();
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView,fragment).commit();
+                //Navigation.findNavController(view).navigate(R.id.action_fragmentSearchPage_to_fragmentGenre);
             }
         });
         Button CompanyButton = view.findViewById(R.id.CompanyButton);
@@ -95,7 +101,9 @@ public class FragmentSearchPage extends Fragment {
         CompanyButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view1) {
-                Navigation.findNavController(view).navigate(R.id.action_fragmentSearchPage_to_fragmentCompany);
+                FragmentCompany fragment = new FragmentCompany();
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView,fragment).commit();
+                //Navigation.findNavController(view).navigate(R.id.action_fragmentSearchPage_to_fragmentCompany);
             }
         });
         Button NameGameButton = view.findViewById(R.id.NameGameButton);
@@ -103,7 +111,9 @@ public class FragmentSearchPage extends Fragment {
         NameGameButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view1) {
-                Navigation.findNavController(view).navigate(R.id.action_fragmentSearchPage_to_fragmentGameName);
+                FragmentGameName fragment = new FragmentGameName();
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView,fragment).commit();
+                //Navigation.findNavController(view).navigate(R.id.action_fragmentSearchPage_to_fragmentGameName);
             }
         });
 

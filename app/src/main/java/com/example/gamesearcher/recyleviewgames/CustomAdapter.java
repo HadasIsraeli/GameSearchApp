@@ -42,11 +42,7 @@ public class CustomAdapter extends FirebaseRecyclerAdapter<DataModel, CustomAdap
         holder.textViewGenre.setText(model.getGenre());
         holder.textViewCompany.setText(model.getCompany());
 
-        //older.gameLinkButton.setOnClickListener(new On);
-
         Glide.with(holder.imageViewGame.getContext()).load(model.getImage()).into(holder.imageViewGame);
-
-        //Glide.with(holder.trailerVideoView.getContext()).load(model.getGameTrailer()).into(holder.trailerVideoView);
 
         holder.trailerVideoButton.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -77,7 +77,9 @@ public class FragmentLaunchYear extends Fragment {
         StartOverLaunchYearButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view1) {
-                Navigation.findNavController(view).navigate(R.id.action_fragmentLaunchYear_to_fragmentSearchPage);
+                FragmentSearchPage fragment = new FragmentSearchPage();
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView,fragment).commit();
+                //Navigation.findNavController(view).navigate(R.id.action_fragmentLaunchYear_to_fragmentSearchPage);
             }
         });
         return view;

@@ -3,7 +3,6 @@ package com.example.gamesearcher.fragments;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
-import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,6 +10,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.example.gamesearcher.R;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -67,50 +68,117 @@ public class FragmentCompany extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_company, container, false);
 
-        Button SearchCompanyButton = view.findViewById(R.id.SearchCompanyButton);
+
         Button StartOverCompanyButton = view.findViewById(R.id.StartOverSearchFromCompanyButton);
-//        Button ActivisionCheckBox = view.findViewById(R.id.ActivisionCheckBox);
-//        Button CPRCheckBox = view.findViewById(R.id.CPRCheckBox);
-//        Button ForzaCheckBox = view.findViewById(R.id.ForzaCheckBox);
-//        Button EACheckBox = view.findViewById(R.id.EACheckBox);
-//        Button RockstarCheckBox = view.findViewById(R.id.RockstarCheckBox);
-//        Button TwoKCheckBox = view.findViewById(R.id.TwoKCheckBox);
-//        Button RiotCheckBox = view.findViewById(R.id.RiotCheckBox);
+        Button ActivisionButton = view.findViewById(R.id.ActivisionButton);
+        Button CPRButton = view.findViewById(R.id.CPRButton);
+        Button ForzaButton = view.findViewById(R.id.ForzaButton);
+        Button EAButton = view.findViewById(R.id.EAButton);
+        Button RockstarButton = view.findViewById(R.id.RockstarButton);
+        Button TwoKButton = view.findViewById(R.id.TwoKButton);
+        Button RiotButton = view.findViewById(R.id.RiotButton);
 
-        SearchCompanyButton.setOnClickListener(new View.OnClickListener() {
+        ArrayList<String> checkedComapnys = new ArrayList<>();
+        checkedComapnys.add("Company");
+        ActivisionButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view1) {
-                // Need to be modified!!!!!!
+            public void onClick(View view) {
+                Bundle bundle = new Bundle();
+                checkedComapnys.add("Activision");
+                bundle.putStringArrayList("key", checkedComapnys);
 
-//                FirebaseDatabase db = FirebaseDatabase.getInstance();
-//                DatabaseReference myRef = db.getReference("Games");
-//                Game game = new Game();
-//                myRef.addValueEventListener(new ValueEventListener() {
-//                    @Override
-//                    public void onDataChange(@NonNull DataSnapshot snapshot) {
-//                        for(DataSnapshot item_snapshot:snapshot.getChildren()){
-//
-//                            Game game = item_snapshot.getValue(Game.class);
-//                            Toast.makeText(getActivity(),game.getCompany(),Toast.LENGTH_SHORT).show();
-//
-//                            if (game.getCompany() == "Activision") {
-//
-//                            }
-//                        }
-//                    }
-//
-//                    @Override
-//                    public void onCancelled(@NonNull DatabaseError error) {
-//                    }
-//                });
-                Navigation.findNavController(view).navigate(R.id.action_fragmentCompany_to_fragmentResultsPage);
+                FragmentResultsPage fragment = new FragmentResultsPage();
+                fragment.setArguments(bundle);
+
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView,fragment).commit();
             }
         });
+        CPRButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Bundle bundle = new Bundle();
+                checkedComapnys.add("CD Projekt RED\n");
+                bundle.putStringArrayList("key", checkedComapnys);
+
+                FragmentResultsPage fragment = new FragmentResultsPage();
+                fragment.setArguments(bundle);
+
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView,fragment).commit();
+            }
+        });
+        ForzaButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Bundle bundle = new Bundle();
+                checkedComapnys.add("Forza Motorsport");
+                bundle.putStringArrayList("key", checkedComapnys);
+
+                FragmentResultsPage fragment = new FragmentResultsPage();
+                fragment.setArguments(bundle);
+
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView,fragment).commit();
+            }
+        });
+        EAButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Bundle bundle = new Bundle();
+                checkedComapnys.add("EA");
+                bundle.putStringArrayList("key", checkedComapnys);
+
+                FragmentResultsPage fragment = new FragmentResultsPage();
+                fragment.setArguments(bundle);
+
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView,fragment).commit();
+            }
+        });
+        RockstarButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Bundle bundle = new Bundle();
+                checkedComapnys.add("Rockstar Games");
+                bundle.putStringArrayList("key", checkedComapnys);
+
+                FragmentResultsPage fragment = new FragmentResultsPage();
+                fragment.setArguments(bundle);
+
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView,fragment).commit();
+            }
+        });
+        TwoKButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Bundle bundle = new Bundle();
+                checkedComapnys.add("2K Sports");
+                bundle.putStringArrayList("key", checkedComapnys);
+
+                FragmentResultsPage fragment = new FragmentResultsPage();
+                fragment.setArguments(bundle);
+
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView,fragment).commit();
+            }
+        });
+        RiotButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Bundle bundle = new Bundle();
+                checkedComapnys.add("RIOT Games");
+                bundle.putStringArrayList("key", checkedComapnys);
+
+                FragmentResultsPage fragment = new FragmentResultsPage();
+                fragment.setArguments(bundle);
+
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView,fragment).commit();
+            }
+        });
+
 
         StartOverCompanyButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view1) {
-                Navigation.findNavController(view).navigate(R.id.action_fragmentCompany_to_fragmentSearchPage);
+                FragmentSearchPage fragment = new FragmentSearchPage();
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView,fragment).commit();
+                //Navigation.findNavController(view).navigate(R.id.action_fragmentCompany_to_fragmentSearchPage);
             }
         });
 

@@ -5,11 +5,11 @@
       <map>
         <entry key="..\:/Users/Alon Sapozhnikov/Desktop/GameSearchApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.36041666666666666" />
         <entry key="..\:/Users/Alon Sapozhnikov/Desktop/GameSearchApp/app/src/main/res/layout/activity_main.xml" value="0.24752475247524752" />
-        <entry key="..\:/Users/Alon Sapozhnikov/Desktop/GameSearchApp/app/src/main/res/layout/fragment_company.xml" value="0.9282153539381854" />
+        <entry key="..\:/Users/Alon Sapozhnikov/Desktop/GameSearchApp/app/src/main/res/layout/fragment_company.xml" value="0.33" />
         <entry key="..\:/Users/Alon Sapozhnikov/Desktop/GameSearchApp/app/src/main/res/layout/fragment_game_name.xml" value="0.9558521560574949" />
-        <entry key="..\:/Users/Alon Sapozhnikov/Desktop/GameSearchApp/app/src/main/res/layout/fragment_genre.xml" value="0.9047619047619048" />
+        <entry key="..\:/Users/Alon Sapozhnikov/Desktop/GameSearchApp/app/src/main/res/layout/fragment_genre.xml" value="0.33" />
         <entry key="..\:/Users/Alon Sapozhnikov/Desktop/GameSearchApp/app/src/main/res/layout/fragment_launch_date.xml" value="0.33" />
-        <entry key="..\:/Users/Alon Sapozhnikov/Desktop/GameSearchApp/app/src/main/res/layout/fragment_launch_year.xml" value="0.34427083333333336" />
+        <entry key="..\:/Users/Alon Sapozhnikov/Desktop/GameSearchApp/app/src/main/res/layout/fragment_launch_year.xml" value="0.25" />
         <entry key="..\:/Users/Alon Sapozhnikov/Desktop/GameSearchApp/app/src/main/res/layout/fragment_platform.xml" value="0.33" />
         <entry key="..\:/Users/Alon Sapozhnikov/Desktop/GameSearchApp/app/src/main/res/layout/fragment_results_page.xml" value="0.25" />
         <entry key="..\:/Users/Alon Sapozhnikov/Desktop/GameSearchApp/app/src/main/res/layout/fragment_search_page.xml" value="0.24752475247524752" />

@@ -54,29 +54,33 @@
             android:orientation="horizontal"
             android:padding="15dp">
 
-            <CheckBox
-                android:id="@+id/ActivisionCheckBox"
+            <Button
+                android:id="@+id/ActivisionButton"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1"
+                android:background="@drawable/design_button"
                 android:fontFamily="@font/amarante"
                 android:gravity="center"
                 android:padding="15dp"
                 android:text="Activision"
-                android:textColor="@color/teal_200" />
+                android:textColor="@color/white"
+                android:textSize="16sp" />
 
-            <CheckBox
-                android:id="@+id/CPRCheckBox"
+            <Button
+                android:id="@+id/CPRButton"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1"
+                android:background="@drawable/design_button"
                 android:fontFamily="@font/amarante"
                 android:gravity="center"
                 android:padding="15dp"
                 android:text="CD Projekt RED"
-                android:textColor="@color/teal_200" />
+                android:textColor="@color/white"
+                android:textSize="16sp" />
 
         </LinearLayout>
 
@@ -89,29 +93,33 @@
             android:orientation="horizontal"
             android:padding="15dp">
 
-            <CheckBox
-                android:id="@+id/ForzaCheckBox"
+            <Button
+                android:id="@+id/ForzaButton"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1"
+                android:background="@drawable/design_button"
                 android:fontFamily="@font/amarante"
                 android:gravity="center"
                 android:padding="15dp"
                 android:text="Forza Motorsport"
-                android:textColor="@color/teal_200" />
+                android:textColor="@color/white"
+                android:textSize="16sp" />
 
-            <CheckBox
-                android:id="@+id/EACheckBox"
+            <Button
+                android:id="@+id/EAButton"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1"
+                android:background="@drawable/design_button"
                 android:fontFamily="@font/amarante"
                 android:gravity="center"
                 android:padding="15dp"
                 android:text="EA"
-                android:textColor="@color/teal_200" />
+                android:textColor="@color/white"
+                android:textSize="16sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -123,29 +131,33 @@
             android:orientation="horizontal"
             android:padding="15dp">
 
-            <CheckBox
-                android:id="@+id/RockstarCheckBox"
+            <Button
+                android:id="@+id/RockstarButton"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1"
+                android:background="@drawable/design_button"
                 android:fontFamily="@font/amarante"
                 android:gravity="center"
                 android:padding="15dp"
                 android:text="Rockstar Games"
-                android:textColor="@color/teal_200" />
+                android:textColor="@color/white"
+                android:textSize="16sp" />
 
-            <CheckBox
-                android:id="@+id/TwoKCheckBox"
+            <Button
+                android:id="@+id/TwoKButton"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1"
+                android:background="@drawable/design_button"
                 android:fontFamily="@font/amarante"
                 android:gravity="center"
                 android:padding="15dp"
                 android:text="2K Sports"
-                android:textColor="@color/teal_200" />
+                android:textColor="@color/white"
+                android:textSize="16sp" />
 
         </LinearLayout>
 
@@ -158,26 +170,20 @@
             android:orientation="horizontal"
             android:padding="15dp">
 
-            <CheckBox
-                android:id="@+id/RiotCheckBox"
-                android:layout_width="match_parent"
+            <Button
+                android:id="@+id/RiotButton"
+                android:layout_width="wrap_content"
                 android:layout_height="79dp"
                 android:layout_gravity="center|top"
                 android:layout_weight="1"
+                android:background="@drawable/design_button"
                 android:fontFamily="@font/amarante"
                 android:gravity="center|left"
                 android:padding="15dp"
                 android:text="RIOT Games"
-                android:textColor="@color/teal_200" />
+                android:textColor="@color/white"
+                android:textSize="16sp" />
         </LinearLayout>
-
-        <Button
-            android:id="@+id/SearchCompanyButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/design_button"
-            android:fontFamily="@font/amarante"
-            android:text="search" />
 
     </LinearLayout>
 
