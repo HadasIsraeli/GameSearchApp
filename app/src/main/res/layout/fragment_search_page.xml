@@ -22,14 +22,29 @@
         android:padding="20dp">
 
         <TextView
+            android:id="@+id/textViewJouenry"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="0.5"
+            android:fontFamily="@font/amarante"
             android:gravity="center"
-            android:padding="20dp"
-            android:text="Begin Your Journey! Choose your preffered search paramter."
-            android:textColor="@color/teal_200" />
+            android:padding="2dp"
+            android:text="Begin Your Journey!"
+            android:textColor="@color/teal_200"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textViewChoose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:fontFamily="@font/amarante"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text=" Choose your preffered search paramter :"
+            android:textColor="@color/teal_200"
+            android:textSize="24sp" />
 
     </LinearLayout>
 
@@ -43,77 +58,77 @@
         <Button
             android:id="@+id/CompanyButton"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:background="@drawable/design_button"
+            android:fontFamily="@font/amarante"
             android:gravity="center"
-            android:padding="20dp"
+            android:padding="30dp"
             android:paddingStart="10dp"
-            android:paddingTop="10dp"
             android:paddingEnd="10dp"
-            android:paddingBottom="20dp"
-            android:text="company" />
+            android:text="company"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/GenreButton"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:background="@drawable/design_button"
+            android:fontFamily="@font/amarante"
             android:gravity="center"
-            android:padding="20dp"
+            android:padding="30dp"
             android:paddingStart="10dp"
-            android:paddingTop="10dp"
             android:paddingEnd="10dp"
-            android:paddingBottom="20dp"
-            android:text="Genre" />
+            android:text="Genre"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/LaunchYearButton"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:background="@drawable/design_button"
+            android:fontFamily="@font/amarante"
             android:gravity="center"
-            android:padding="20dp"
+            android:padding="30dp"
             android:paddingStart="10dp"
-            android:paddingTop="10dp"
             android:paddingEnd="10dp"
-            android:paddingBottom="20dp"
-            android:text="Launch Year" />
+            android:text="Launch Year"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/NameGameButton"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:background="@drawable/design_button"
+            android:fontFamily="@font/amarante"
             android:gravity="center"
-            android:padding="20dp"
+            android:padding="30dp"
             android:paddingStart="10dp"
-            android:paddingTop="10dp"
             android:paddingEnd="10dp"
-            android:paddingBottom="20dp"
-            android:text="Game Name" />
+            android:text="Game Name"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/Platformbutton"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:background="@drawable/design_button"
+            android:fontFamily="@font/amarante"
             android:gravity="center"
-            android:padding="20dp"
+            android:padding="30dp"
             android:paddingStart="10dp"
-            android:paddingTop="10dp"
             android:paddingEnd="10dp"
-            android:paddingBottom="20dp"
-            android:text="platform" />
+            android:text="platform"
+            android:textSize="24sp" />
 
     </LinearLayout>
 

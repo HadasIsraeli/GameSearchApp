@@ -3,10 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fontFamily="@font/amarante"
     android:orientation="vertical"
     android:padding="10dp"
-    tools:context=".fragments.FragmentCompany"
-    android:fontFamily="sans-serif-black">
+    tools:context=".fragments.FragmentCompany">
 
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
@@ -20,9 +20,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="left"
             android:background="@drawable/design_button"
+            android:fontFamily="@font/amarante"
             android:gravity="center"
             android:padding="10dp"
-            android:text="StartOver" />
+            android:text="Start Over" />
     </LinearLayout>
 
     <LinearLayout
@@ -37,10 +38,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:fontFamily="@font/amarante"
             android:gravity="center"
             android:padding="5dp"
             android:text="choose the Game company"
-            android:textColor="@color/teal_200" />
+            android:textColor="@color/teal_200"
+            android:textSize="24sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -57,6 +60,7 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1"
+                android:fontFamily="@font/amarante"
                 android:gravity="center"
                 android:padding="15dp"
                 android:text="Activision"
@@ -68,6 +72,7 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1"
+                android:fontFamily="@font/amarante"
                 android:gravity="center"
                 android:padding="15dp"
                 android:text="CD Projekt RED"
@@ -90,6 +95,7 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1"
+                android:fontFamily="@font/amarante"
                 android:gravity="center"
                 android:padding="15dp"
                 android:text="Forza Motorsport"
@@ -101,6 +107,7 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1"
+                android:fontFamily="@font/amarante"
                 android:gravity="center"
                 android:padding="15dp"
                 android:text="EA"
@@ -122,6 +129,7 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1"
+                android:fontFamily="@font/amarante"
                 android:gravity="center"
                 android:padding="15dp"
                 android:text="Rockstar Games"
@@ -133,6 +141,7 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1"
+                android:fontFamily="@font/amarante"
                 android:gravity="center"
                 android:padding="15dp"
                 android:text="2K Sports"
@@ -153,8 +162,9 @@
                 android:id="@+id/RiotCheckBox"
                 android:layout_width="match_parent"
                 android:layout_height="79dp"
-                android:layout_gravity="center"
+                android:layout_gravity="center|top"
                 android:layout_weight="1"
+                android:fontFamily="@font/amarante"
                 android:gravity="center|left"
                 android:padding="15dp"
                 android:text="RIOT Games"
@@ -166,6 +176,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/design_button"
+            android:fontFamily="@font/amarante"
             android:text="search" />
 
     </LinearLayout>

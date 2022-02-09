@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:layout_height="wrap_content"
     android:fontFamily="sans-serif-black"
+    android:orientation="vertical"
     tools:context=".recyleviewgames.ResultPageActivity">
 
     <androidx.cardview.widget.CardView
@@ -19,26 +19,37 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/back_color"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="10dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/back_color"
-                android:orientation="vertical"
-                android:padding="15dp">
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/textViewName"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/amarante"
+                    android:gravity="center"
                     android:text="textViewName"
-                    android:textColor="@color/teal_200" />
+                    android:textColor="@color/teal_200"
+                    android:textSize="34sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back_color"
+                android:orientation="vertical"
+                android:padding="15dp">
 
                 <ImageView
                     android:id="@+id/imageViewGame"
                     android:layout_width="match_parent"
-                    android:layout_height="379dp"
+                    android:layout_height="277dp"
                     android:src="@drawable/ic_launcher_foreground" />
 
             </LinearLayout>
@@ -46,37 +57,105 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/back_color"
-                android:orientation="vertical"
-                android:padding="15dp">
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/textViewCompany"
-                    android:layout_width="match_parent"
+                <LinearLayout
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="TextView"
-                    android:textColor="@color/teal_200" />
+                    android:orientation="vertical"
+                    android:padding="8dp">
 
-                <TextView
-                    android:id="@+id/textViewGenre"
+                    <TextView
+                        android:id="@+id/textViewCategoryCompany"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/amarante"
+                        android:padding="2dp"
+                        android:text="Company :"
+                        android:textColor="@color/teal_200" />
+
+                    <TextView
+                        android:id="@+id/textViewCategoryPlatform"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/amarante"
+                        android:padding="2dp"
+                        android:text="Platform : "
+                        android:textColor="@color/teal_200" />
+
+                    <TextView
+                        android:id="@+id/textViewCategoryGenre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/amarante"
+                        android:padding="2dp"
+                        android:text="Genre : "
+                        android:textColor="@color/teal_200" />
+
+                    <TextView
+                        android:id="@+id/textViewCategoryLaunchDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/amarante"
+                        android:padding="2dp"
+                        android:text="Launch Date : "
+                        android:textColor="@color/teal_200" />
+
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="TextView"
-                    android:textColor="@color/teal_200" />
+                    android:background="@drawable/back_color"
+                    android:orientation="vertical"
+                    android:padding="8dp">
 
-                <TextView
-                    android:id="@+id/textViewPlatform"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="TextView"
-                    android:textColor="@color/teal_200" />
+                    <TextView
+                        android:id="@+id/textViewCompany"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/amarante"
+                        android:padding="2dp"
+                        android:text="TextView"
+                        android:textColor="@color/teal_200" />
 
-                <TextView
-                    android:id="@+id/textViewLaunchDate"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="TextView"
-                    android:textColor="@color/teal_200" />
+                    <TextView
+                        android:id="@+id/textViewPlatform"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/amarante"
+                        android:padding="2dp"
+                        android:text="TextView"
+                        android:textColor="@color/teal_200" />
+
+                    <TextView
+                        android:id="@+id/textViewGenre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/amarante"
+                        android:padding="2dp"
+                        android:text="TextView"
+                        android:textColor="@color/teal_200" />
+
+                    <TextView
+                        android:id="@+id/textViewLaunchDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/amarante"
+                        android:padding="2dp"
+                        android:text="TextView"
+                        android:textColor="@color/teal_200" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
 
                 <Button
                     android:id="@+id/gameLinkButton"
@@ -85,13 +164,13 @@
                     android:layout_gravity="center"
                     android:layout_weight="0.9"
                     android:background="@drawable/design_button"
+                    android:fontFamily="@font/amarante"
                     android:gravity="center"
                     android:padding="10dp"
                     android:paddingStart="10dp"
                     android:paddingEnd="10dp"
                     android:paddingBottom="10dp"
                     android:text="Official Game Web Site" />
-
             </LinearLayout>
 
             <LinearLayout
@@ -103,7 +182,7 @@
                 <VideoView
                     android:id="@+id/trailerVideoView"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="144dp"
                     android:layout_gravity="center"
                     android:layout_weight="1" />
             </LinearLayout>
