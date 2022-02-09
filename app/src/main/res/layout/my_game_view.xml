@@ -153,38 +153,33 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="10dp">
-
-                <Button
-                    android:id="@+id/gameLinkButton"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_weight="0.9"
-                    android:background="@drawable/design_button"
-                    android:fontFamily="@font/amarante"
-                    android:gravity="center"
-                    android:padding="10dp"
-                    android:paddingStart="10dp"
-                    android:paddingEnd="10dp"
-                    android:paddingBottom="10dp"
-                    android:text="Official Game Web Site" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:padding="15dp">
 
-                <VideoView
-                    android:id="@+id/trailerVideoView"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="144dp"
-                    android:layout_gravity="center"
-                    android:layout_weight="1" />
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButtonWeb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/back_color"
+                        app:srcCompat="@drawable/internet" />
+
+                    <ImageButton
+                        android:id="@+id/trailerVideoButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/back_color"
+                        app:srcCompat="@drawable/youtube" />
+                </LinearLayout>
+
             </LinearLayout>
         </LinearLayout>
 

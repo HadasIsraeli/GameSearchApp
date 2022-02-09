@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.MediaController;
 import android.widget.TextView;
@@ -26,8 +27,7 @@ import com.firebase.ui.database.FirebaseRecyclerOptions;
 import java.util.ArrayList;
 
 
-public class CustomAdapter extends FirebaseRecyclerAdapter<DataModel, CustomAdapter.MyViewHolder>
-{
+public class CustomAdapter extends FirebaseRecyclerAdapter<DataModel, CustomAdapter.MyViewHolder> {
 
 
     public CustomAdapter(@NonNull FirebaseRecyclerOptions<DataModel> options) {
@@ -48,31 +48,27 @@ public class CustomAdapter extends FirebaseRecyclerAdapter<DataModel, CustomAdap
 
         //Glide.with(holder.trailerVideoView.getContext()).load(model.getGameTrailer()).into(holder.trailerVideoView);
 
-        holder.gameLinkButton.setOnClickListener(new View.OnClickListener() {
+        holder.trailerVideoButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String url = model.getWebSite();
-                AppCompatActivity activity=(AppCompatActivity)view.getContext();
+                String url = model.getGameTrailer();
+                AppCompatActivity activity = (AppCompatActivity) view.getContext();
                 Intent i = new Intent(Intent.ACTION_VIEW);
                 i.setData(Uri.parse(url));
                 activity.startActivity(i);
             }
         });
 
-
-        // Attempts to create Trailer View.
-
-//        holder.trailerVideoView.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                holder.trailerVideoView.setVideoURI(Uri.parse(model.getGameTrailer()));
-//                MediaController mediaController = new MediaController(holder.trailerVideoView.getContext());
-//                mediaController.setAnchorView(holder.trailerVideoView);
-//                mediaController.setMediaPlayer(holder.trailerVideoView);
-//                holder.trailerVideoView.setMediaController(mediaController);
-//                holder.trailerVideoView.start();
-//            }
-//        });
+        holder.imageButtonWeb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String url = model.getWebSite();
+                AppCompatActivity activity = (AppCompatActivity) view.getContext();
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                activity.startActivity(i);
+            }
+        });
     }
 
     @NonNull
@@ -84,9 +80,9 @@ public class CustomAdapter extends FirebaseRecyclerAdapter<DataModel, CustomAdap
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
         TextView textViewName, textViewCompany, textViewGenre, textViewPlatform, textViewLaunchDate;
-        Button gameLinkButton;
         ImageView imageViewGame;
-        VideoView trailerVideoView;
+        ImageButton trailerVideoButton;
+        ImageButton imageButtonWeb;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -96,9 +92,10 @@ public class CustomAdapter extends FirebaseRecyclerAdapter<DataModel, CustomAdap
             textViewPlatform = (TextView) itemView.findViewById(R.id.textViewPlatform);
             textViewGenre = (TextView) itemView.findViewById(R.id.textViewGenre);
             textViewCompany = (TextView) itemView.findViewById(R.id.textViewCompany);
-            gameLinkButton = (Button) itemView.findViewById(R.id.gameLinkButton);
-            trailerVideoView = (VideoView) itemView.findViewById(R.id.trailerVideoView);
+            trailerVideoButton = (ImageButton) itemView.findViewById(R.id.trailerVideoButton);
             imageViewGame = (ImageView) itemView.findViewById(R.id.imageViewGame);
+
+            imageButtonWeb = (ImageButton) itemView.findViewById(R.id.imageButtonWeb);
         }
     }
 }
