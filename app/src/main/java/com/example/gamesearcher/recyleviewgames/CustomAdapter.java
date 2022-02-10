@@ -90,7 +90,6 @@ public class CustomAdapter extends FirebaseRecyclerAdapter<DataModel, CustomAdap
             textViewCompany = (TextView) itemView.findViewById(R.id.textViewCompany);
             trailerVideoButton = (ImageButton) itemView.findViewById(R.id.trailerVideoButton);
             imageViewGame = (ImageView) itemView.findViewById(R.id.imageViewGame);
-
             imageButtonWeb = (ImageButton) itemView.findViewById(R.id.imageButtonWeb);
         }
     }

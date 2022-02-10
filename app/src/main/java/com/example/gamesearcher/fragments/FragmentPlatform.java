@@ -71,7 +71,7 @@ public class FragmentPlatform extends Fragment {
         Button PSButton = view.findViewById(R.id.PSButton);
         Button XboxButton = view.findViewById(R.id.XboxButton);
         Button PCButton = view.findViewById(R.id.PCButton);
-        Button   NitendoButton = view.findViewById(R.id.NitendoButton);
+        Button NitendoButton = view.findViewById(R.id.NitendoButton);
 
         ArrayList<String> selectedPlatform = new ArrayList<>();
         selectedPlatform.add("Platform");
@@ -134,7 +134,6 @@ public class FragmentPlatform extends Fragment {
             public void onClick(View view1) {
                 FragmentSearchPage fragment = new FragmentSearchPage();
                 getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView,fragment).commit();
-                //Navigation.findNavController(view).navigate(R.id.action_fragmentPlatform_to_fragmentSearchPage);
             }
         });
 

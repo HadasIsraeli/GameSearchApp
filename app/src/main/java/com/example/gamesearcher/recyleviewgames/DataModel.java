@@ -4,7 +4,16 @@ import com.example.gamesearcher.R;
 
 public class DataModel {
 
-    String Company, GameName, GameTrailer, Genre, Image, LaunchDate, Platform, WebSite;
+    String Company;
+    String GameName;
+    String GameTrailer;
+    String Genre;
+    String Image;
+    String LaunchDate;
+    String Platform;
+    String WebSite;
+
+
 
     public DataModel() {
     }

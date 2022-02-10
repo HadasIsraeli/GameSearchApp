@@ -38,29 +38,19 @@
         android:layout_weight="1"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/searchGameName"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:fontFamily="@font/amarante"
-            android:gravity="center"
-            android:text="search your game by Name"
-            android:textColor="@color/teal_200"
-            android:textSize="20sp" />
-
         <EditText
             android:id="@+id/TextGameName"
-            android:layout_width="match_parent"
+            android:layout_width="368dp"
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:ems="10"
             android:fontFamily="@font/amarante"
-            android:gravity="bottom|center"
+            android:gravity="center"
+            android:hint="@string/password"
             android:inputType="textPersonName"
             android:textColor="@color/teal_200"
+            android:textColorHint="@color/teal_200"
             android:textSize="20sp" />
 
     </LinearLayout>

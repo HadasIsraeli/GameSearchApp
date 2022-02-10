@@ -66,16 +66,6 @@ public class FragmentSearchPage extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_search_page, container, false);
 
-        Button LaunchYearButton = view.findViewById(R.id.LaunchYearButton);
-
-        LaunchYearButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view1) {
-                FragmentLaunchYear fragment = new FragmentLaunchYear();
-                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView,fragment).commit();
-                //Navigation.findNavController(view).navigate(R.id.action_fragmentSearchPage_to_fragmentLaunchYear);
-            }
-        });
         Button Platformbutton = view.findViewById(R.id.Platformbutton);
 
         Platformbutton.setOnClickListener(new View.OnClickListener() {

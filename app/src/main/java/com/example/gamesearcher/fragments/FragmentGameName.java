@@ -16,6 +16,7 @@ import android.widget.TextView;
 import com.example.gamesearcher.R;
 
 import java.util.ArrayList;
+import java.util.Locale;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -81,7 +82,7 @@ public class FragmentGameName extends Fragment {
             @Override
             public void onClick(View view1) {
                 Bundle bundle = new Bundle();
-                gameNameList.add(gameNameWindow.getText().toString());
+                gameNameList.add(gameNameWindow.getText().toString().toUpperCase());
                 bundle.putStringArrayList("key", gameNameList);
 
                 FragmentResultsPage fragment = new FragmentResultsPage();
