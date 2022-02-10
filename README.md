@@ -3,6 +3,12 @@
 Developed by Hadas Israeli and Alon Sapozhnikov
 
 Android Studio app for searching games by game name, company, platform and genre 
+Watch our app demo:
+
+https://www.youtube.com/watch?v=GB7-MAOxQ5Y
+
+
+
 ![Welcome_Page](https://user-images.githubusercontent.com/52449493/153462233-e4c74b5d-6f11-456f-a7d3-1883db5ed018.png)
 ![Search_Page](https://user-images.githubusercontent.com/52449493/153462290-45838c7c-ce9f-4be4-a704-cc875793f10f.png)
 ![Company_Page](https://user-images.githubusercontent.com/52449493/153462251-565dff1f-bb2e-4dec-b182-88f3fc500cb8.png)
