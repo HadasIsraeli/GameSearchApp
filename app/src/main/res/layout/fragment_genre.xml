@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/back_color"
     android:fontFamily="@font/amarante"
     android:orientation="vertical"
     android:padding="10dp"
@@ -33,7 +34,7 @@
         android:layout_gravity="center"
         android:gravity="center"
         android:orientation="vertical"
-        android:padding="20dp">
+        android:padding="10dp">
 
         <TextView
             android:id="@+id/textView2"
@@ -53,15 +54,15 @@
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="horizontal"
-            android:padding="15dp">
+            android:padding="10dp">
 
             <Button
                 android:id="@+id/ActionButton"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:background="@drawable/design_button"
+                android:background="@drawable/design_filter_button"
                 android:fontFamily="@font/amarante"
                 android:gravity="center"
                 android:padding="15dp"
@@ -72,10 +73,10 @@
             <Button
                 android:id="@+id/SportsButton"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:background="@drawable/design_button"
+                android:background="@drawable/design_filter_button"
                 android:fontFamily="@font/amarante"
                 android:gravity="center"
                 android:padding="15dp"
@@ -91,15 +92,15 @@
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="horizontal"
-            android:padding="15dp">
+            android:padding="10dp">
 
             <Button
                 android:id="@+id/AdventureButton"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:background="@drawable/design_button"
+                android:background="@drawable/design_filter_button"
                 android:fontFamily="@font/amarante"
                 android:gravity="center"
                 android:padding="15dp"
@@ -110,10 +111,10 @@
             <Button
                 android:id="@+id/RoleplayingButton"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:background="@drawable/design_button"
+                android:background="@drawable/design_filter_button"
                 android:fontFamily="@font/amarante"
                 android:gravity="center"
                 android:padding="15dp"
@@ -130,15 +131,15 @@
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="horizontal"
-            android:padding="15dp">
+            android:padding="10dp">
 
             <Button
                 android:id="@+id/BattleRoyaleButton"
-                android:layout_width="371dp"
-                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:background="@drawable/design_button"
+                android:background="@drawable/design_filter_button"
                 android:fontFamily="@font/amarante"
                 android:gravity="center"
                 android:padding="15dp"
@@ -148,11 +149,11 @@
 
             <Button
                 android:id="@+id/FirstPersonShooterButton"
-                android:layout_width="376dp"
-                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:background="@drawable/design_button"
+                android:background="@drawable/design_filter_button"
                 android:fontFamily="@font/amarante"
                 android:gravity="center"
                 android:padding="15dp"
@@ -168,15 +169,15 @@
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="horizontal"
-            android:padding="15dp">
+            android:padding="10dp">
 
             <Button
                 android:id="@+id/RacingButton"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:background="@drawable/design_button"
+                android:background="@drawable/design_filter_button"
                 android:fontFamily="@font/amarante"
                 android:gravity="center"
                 android:padding="15dp"
@@ -187,10 +188,10 @@
             <Button
                 android:id="@+id/FantasyButton"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:background="@drawable/design_button"
+                android:background="@drawable/design_filter_button"
                 android:fontFamily="@font/amarante"
                 android:gravity="center"
                 android:text="Fantasy"

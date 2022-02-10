@@ -55,7 +55,6 @@
             android:gravity="bottom|center"
             android:inputType="date"
             android:padding="15dp"
-            android:text="Write Game Launch Year Here"
             android:textColor="@color/teal_200" />
 
     </LinearLayout>

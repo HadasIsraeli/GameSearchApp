@@ -2,11 +2,11 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:fontFamily="sans-serif-black"
     android:orientation="vertical"
     android:padding="20dp"
-    tools:context=".fragments.FragmentPlatform"
-    android:fontFamily="sans-serif-black">
+    tools:context=".fragments.FragmentPlatform">
 
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
@@ -29,7 +29,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="633dp"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         android:padding="20dp">
 
@@ -43,57 +43,88 @@
             android:textColor="@color/teal_200"
             android:textSize="24sp" />
 
-        <Button
-            android:id="@+id/PSButton"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:background="@drawable/design_button"
-            android:fontFamily="@font/amarante"
-            android:gravity="center"
-            android:padding="15dp"
-            android:text="PS"
-            android:textColor="@color/white" />
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
 
-        <Button
-            android:id="@+id/XboxButton"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:background="@drawable/design_button"
-            android:fontFamily="@font/amarante"
-            android:gravity="center"
-            android:padding="15dp"
-            android:text="Xbox"
-            android:textColor="@color/white" />
+            <Button
+                android:id="@+id/PSButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.2"
+                android:background="@drawable/design_filter_button"
+                android:fontFamily="@font/amarante"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="PS"
+                android:textColor="@color/white" />
+        </LinearLayout>
 
-        <Button
-            android:id="@+id/PCButton"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:background="@drawable/design_button"
-            android:fontFamily="@font/amarante"
-            android:gravity="center"
-            android:padding="15dp"
-            android:text="PC"
-            android:textColor="@color/white" />
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
 
-        <Button
-            android:id="@+id/NitendoButton"
+            <Button
+                android:id="@+id/XboxButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.2"
+                android:background="@drawable/design_filter_button"
+                android:fontFamily="@font/amarante"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="Xbox"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/design_button"
-            android:fontFamily="@font/amarante"
-            android:gravity="center"
-            android:padding="15dp"
-            android:text="Nitendo"
-            android:textColor="@color/white" />
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <Button
+                android:id="@+id/NitendoButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.2"
+                android:background="@drawable/design_filter_button"
+                android:fontFamily="@font/amarante"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="Nitendo"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <Button
+                android:id="@+id/PCButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.2"
+                android:background="@drawable/design_filter_button"
+                android:fontFamily="@font/amarante"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="PC"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
