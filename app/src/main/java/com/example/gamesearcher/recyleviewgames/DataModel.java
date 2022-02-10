@@ -14,7 +14,6 @@ public class DataModel {
     String WebSite;
 
 
-
     public DataModel() {
     }
 

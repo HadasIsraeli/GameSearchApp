@@ -64,7 +64,7 @@ public class FragmentResultsPage extends Fragment {
     private String mParam2;
 
     public FragmentResultsPage() {
-        // Required empty public constructor
+
     }
 
     public static FragmentResultsPage newInstance(String param1, String param2) {
@@ -91,50 +91,24 @@ public class FragmentResultsPage extends Fragment {
         Bundle bundle = this.getArguments();
         ArrayList<String> checkedValues = bundle.getStringArrayList("key");
         recyclerView = view.findViewById(R.id.my_recycle_view);
-        //recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManagerWrapper(getContext(), LinearLayoutManager.VERTICAL, false);
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
 
-        if (checkedValues.get(0) == "GameName")
-        {
+        if (checkedValues.get(0) == "GameName") {
             FirebaseRecyclerOptions<DataModel> options =
                     new FirebaseRecyclerOptions.Builder<DataModel>()
                             .setQuery(FirebaseDatabase.getInstance().getReference().child("Games").orderByChild(checkedValues.get(0)).startAt(checkedValues.get(1)).endAt(checkedValues.get(1) + "\uf8ff"), DataModel.class)
                             .build();
             adapter = new CustomAdapter(options);
-            if (adapter == null)
-            {
-                new AlertDialog.Builder(getContext())
-                        .setTitle("Delete entry")
-                        .setMessage("Are you sure you want to delete this entry?")
+            recyclerView.setAdapter(adapter);
 
-                        // Specifying a listener allows you to take an action before dismissing the dialog.
-                        // The dialog is automatically dismissed when a dialog button is clicked.
-                        .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int which) {
-                                // Continue with delete operation
-                            }
-                        })
-
-                        // A null listener allows the button to dismiss the dialog and take no further action.
-                        .setNegativeButton(android.R.string.no, null)
-                        .setIcon(android.R.drawable.ic_dialog_alert)
-                        .show();
-            }
-            else{
-
-                recyclerView.setAdapter(adapter);
-
-            }
-
-        }
-        else
-        {
+        } else {
             FirebaseRecyclerOptions<DataModel> options =
                     new FirebaseRecyclerOptions.Builder<DataModel>()
                             .setQuery(FirebaseDatabase.getInstance().getReference().child("Games").orderByChild(checkedValues.get(0)).equalTo(checkedValues.get(1)), DataModel.class)
                             .build();
+
             adapter = new CustomAdapter(options);
             recyclerView.setAdapter(adapter);
 
@@ -145,8 +119,7 @@ public class FragmentResultsPage extends Fragment {
             @Override
             public void onClick(View view1) {
                 FragmentSearchPage fragment = new FragmentSearchPage();
-                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView,fragment).commit();
-                //Navigation.findNavController(view).navigate(R.id.action_fragmentResultsPage_to_fragmentSearchPage);
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView, fragment).commit();
             }
         });
 

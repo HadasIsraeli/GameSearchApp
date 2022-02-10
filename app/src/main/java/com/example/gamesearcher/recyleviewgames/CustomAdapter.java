@@ -94,6 +94,3 @@ public class CustomAdapter extends FirebaseRecyclerAdapter<DataModel, CustomAdap
         }
     }
 }
-
-
-

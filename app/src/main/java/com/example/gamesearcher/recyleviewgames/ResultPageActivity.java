@@ -22,8 +22,8 @@ public class ResultPageActivity extends AppCompatActivity {
 
         FragmentResultsPage fragmentResultsPage = new FragmentResultsPage();
         FragmentManager fragmentManager = getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
-        fragmentTransaction.add(R.id.resultsLayout,fragmentResultsPage);
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.add(R.id.resultsLayout, fragmentResultsPage);
         fragmentTransaction.commit();
 
         Intent intent = new Intent(ResultPageActivity.this, MainActivity.class);
