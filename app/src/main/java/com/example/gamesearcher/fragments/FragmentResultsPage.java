@@ -70,14 +70,37 @@ public class FragmentResultsPage extends Fragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
 
-        FirebaseRecyclerOptions<DataModel> options =
-                new FirebaseRecyclerOptions.Builder<DataModel>()
-                        .setQuery(FirebaseDatabase.getInstance().getReference().child("Games").orderByChild(checkedValues.get(0)).equalTo(checkedValues.get(1)), DataModel.class)
-                        .build();
+        if (checkedValues.get(0) == "GameName")
+        {
+            FirebaseRecyclerOptions<DataModel> options =
+                    new FirebaseRecyclerOptions.Builder<DataModel>()
+                            .setQuery(FirebaseDatabase.getInstance().getReference().child("Games").orderByChild(checkedValues.get(0)).startAt(checkedValues.get(1)), DataModel.class)
+                            .build();
+            adapter = new CustomAdapter(options);
+            recyclerView.setAdapter(adapter);
 
+        }
+        else if (checkedValues.get(0) == "LaunchDate")
+        {
+            FirebaseRecyclerOptions<DataModel> options =
+                    new FirebaseRecyclerOptions.Builder<DataModel>()
+                            .setQuery(FirebaseDatabase.getInstance().getReference().child("Games").orderByChild(checkedValues.get(0)).endAt(checkedValues.get(1)), DataModel.class)
+                            .build();
+            adapter = new CustomAdapter(options);
+            recyclerView.setAdapter(adapter);
 
-        adapter = new CustomAdapter(options);
-        recyclerView.setAdapter(adapter);
+        }
+
+        else
+        {
+            FirebaseRecyclerOptions<DataModel> options =
+                    new FirebaseRecyclerOptions.Builder<DataModel>()
+                            .setQuery(FirebaseDatabase.getInstance().getReference().child("Games").orderByChild(checkedValues.get(0)).equalTo(checkedValues.get(1)), DataModel.class)
+                            .build();
+            adapter = new CustomAdapter(options);
+            recyclerView.setAdapter(adapter);
+
+        }
 
         Button StartOverResultsButton = view.findViewById(R.id.StartOverSearchFromResults);
         StartOverResultsButton.setOnClickListener(new View.OnClickListener() {

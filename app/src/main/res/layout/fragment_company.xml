@@ -172,8 +172,8 @@
 
             <Button
                 android:id="@+id/RiotButton"
-                android:layout_width="wrap_content"
-                android:layout_height="79dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_gravity="center|top"
                 android:layout_weight="1"
                 android:background="@drawable/design_button"
@@ -181,6 +181,20 @@
                 android:gravity="center|left"
                 android:padding="15dp"
                 android:text="RIOT Games"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/TelltaleGamesButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|top"
+                android:layout_weight="1"
+                android:background="@drawable/design_button"
+                android:fontFamily="@font/amarante"
+                android:gravity="center|left"
+                android:padding="15dp"
+                android:text="Telltale Games"
                 android:textColor="@color/white"
                 android:textSize="16sp" />
         </LinearLayout>

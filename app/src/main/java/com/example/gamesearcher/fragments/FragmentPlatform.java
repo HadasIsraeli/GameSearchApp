@@ -3,7 +3,6 @@ package com.example.gamesearcher.fragments;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
-import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -67,41 +66,66 @@ public class FragmentPlatform extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_platform, container, false);
 
-        Button SearchPlatformButton = view.findViewById(R.id.SearchPlatformButton);
+
         Button StartOverPlatformButton = view.findViewById(R.id.StartOverSearchFromPlatformButton);
-        CheckBox PSCheckBox = view.findViewById(R.id.PSCheckBox);
-        CheckBox XboxCheckBox = view.findViewById(R.id.XboxCheckBox);
-        CheckBox PCCheckBox = view.findViewById(R.id.PCCheckBox);
-        CheckBox NitendoCheckBox = view.findViewById(R.id.NitendoCheckBox);
+        Button PSButton = view.findViewById(R.id.PSButton);
+        Button XboxButton = view.findViewById(R.id.XboxButton);
+        Button PCButton = view.findViewById(R.id.PCButton);
+        Button   NitendoButton = view.findViewById(R.id.NitendoButton);
 
+        ArrayList<String> selectedPlatform = new ArrayList<>();
+        selectedPlatform.add("Platform");
 
-        ArrayList<String> checkedPlatforms = new ArrayList<>();
-
-        SearchPlatformButton.setOnClickListener(new View.OnClickListener() {
+        PSButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view1) {
-                checkedPlatforms.add("Platform");
-                if(PSCheckBox.isChecked()){
-                    checkedPlatforms.add("PS");
-                }
-                if(XboxCheckBox.isChecked()){
-                    checkedPlatforms.add("Xbox");
-                }
-                if(PCCheckBox.isChecked()){
-                    checkedPlatforms.add("PC");
-                }
-                if(NitendoCheckBox.isChecked()){
-                    checkedPlatforms.add("Nitendo");
-                }
-
+            public void onClick(View view) {
                 Bundle bundle = new Bundle();
-                bundle.putStringArrayList("key", checkedPlatforms);
+                selectedPlatform.add("PS");
+                bundle.putStringArrayList("key", selectedPlatform);
 
                 FragmentResultsPage fragment = new FragmentResultsPage();
                 fragment.setArguments(bundle);
 
                 getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView,fragment).commit();
-                //Navigation.findNavController(view).navigate(R.id.action_fragmentPlatform_to_fragmentResultsPage);
+            }
+        });
+        XboxButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Bundle bundle = new Bundle();
+                selectedPlatform.add("Xbox");
+                bundle.putStringArrayList("key", selectedPlatform);
+
+                FragmentResultsPage fragment = new FragmentResultsPage();
+                fragment.setArguments(bundle);
+
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView,fragment).commit();
+            }
+        });
+        PCButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Bundle bundle = new Bundle();
+                selectedPlatform.add("PC");
+                bundle.putStringArrayList("key", selectedPlatform);
+
+                FragmentResultsPage fragment = new FragmentResultsPage();
+                fragment.setArguments(bundle);
+
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView,fragment).commit();
+            }
+        });
+        NitendoButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Bundle bundle = new Bundle();
+                selectedPlatform.add("Nitendo");
+                bundle.putStringArrayList("key", selectedPlatform);
+
+                FragmentResultsPage fragment = new FragmentResultsPage();
+                fragment.setArguments(bundle);
+
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView,fragment).commit();
             }
         });
 

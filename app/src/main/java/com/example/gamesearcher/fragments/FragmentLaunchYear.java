@@ -1,5 +1,7 @@
 package com.example.gamesearcher.fragments;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -9,8 +11,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 
 import com.example.gamesearcher.R;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -67,10 +72,43 @@ public class FragmentLaunchYear extends Fragment {
         Button SearchLaunchYearButton = view.findViewById(R.id.SearchLaunchYearButton);
         Button StartOverLaunchYearButton = view.findViewById(R.id.StartOverSearchFromLaunchYearButton);
 
+        EditText LaunchDateWindow = view.findViewById(R.id.editTextDate);
+
+        ArrayList<String> LaunchDateList = new ArrayList<>();
+        LaunchDateList.add("LaunchDate");
+
         SearchLaunchYearButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view1) {
-                Navigation.findNavController(view).navigate(R.id.action_fragmentLaunchYear_to_fragmentResultsPage);
+                Bundle bundle = new Bundle();
+                if (LaunchDateWindow.getText().toString().length() != 4)
+                {
+                    new AlertDialog.Builder(getContext())
+                            .setTitle("Invalid Input")
+                            .setMessage("Enter the Input once again, this time enter a 4 digit year")
+
+                            // Specifying a listener allows you to take an action before dismissing the dialog.
+                            // The dialog is automatically dismissed when a dialog button is clicked.
+                            .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int which) {
+                                    // Continue with delete operation
+                                }
+                            })
+
+                            // A null listener allows the button to dismiss the dialog and take no further action.
+                            .setNegativeButton(android.R.string.no, null)
+                            .setIcon(android.R.drawable.ic_dialog_alert)
+                            .show();
+                }
+                else {
+                    LaunchDateList.add(LaunchDateWindow.getText().toString());
+                    bundle.putStringArrayList("key", LaunchDateList);
+
+                    FragmentResultsPage fragment = new FragmentResultsPage();
+                    fragment.setArguments(bundle);
+
+                    getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView, fragment).commit();
+                }
             }
         });
 

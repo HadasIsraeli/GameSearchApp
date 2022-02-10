@@ -29,7 +29,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="524dp"
+        android:layout_height="633dp"
         android:orientation="vertical"
         android:padding="20dp">
 
@@ -43,69 +43,58 @@
             android:textColor="@color/teal_200"
             android:textSize="24sp" />
 
-        <CheckBox
-            android:id="@+id/PSCheckBox"
+        <Button
+            android:id="@+id/PSButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:layout_weight="1"
+            android:background="@drawable/design_button"
             android:fontFamily="@font/amarante"
             android:gravity="center"
             android:padding="15dp"
             android:text="PS"
-            android:textColor="@color/teal_200" />
+            android:textColor="@color/white" />
 
-        <CheckBox
-            android:id="@+id/XboxCheckBox"
+        <Button
+            android:id="@+id/XboxButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:layout_weight="1"
+            android:background="@drawable/design_button"
             android:fontFamily="@font/amarante"
             android:gravity="center"
             android:padding="15dp"
             android:text="Xbox"
-            android:textColor="@color/teal_200" />
+            android:textColor="@color/white" />
 
-        <CheckBox
-            android:id="@+id/PCCheckBox"
+        <Button
+            android:id="@+id/PCButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:layout_weight="1"
+            android:background="@drawable/design_button"
             android:fontFamily="@font/amarante"
             android:gravity="center"
             android:padding="15dp"
             android:text="PC"
-            android:textColor="@color/teal_200" />
+            android:textColor="@color/white" />
 
-        <CheckBox
-            android:id="@+id/NitendoCheckBox"
+        <Button
+            android:id="@+id/NitendoButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:layout_weight="1"
+            android:background="@drawable/design_button"
             android:fontFamily="@font/amarante"
             android:gravity="center"
             android:padding="15dp"
             android:text="Nitendo"
-            android:textColor="@color/teal_200" />
+            android:textColor="@color/white" />
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="bottom"
-        android:orientation="vertical">
-
-        <Button
-            android:id="@+id/SearchPlatformButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/design_button"
-            android:fontFamily="@font/amarante"
-            android:text="search" />
     </LinearLayout>
 
 </LinearLayout>

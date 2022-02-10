@@ -77,15 +77,16 @@ public class FragmentCompany extends Fragment {
         Button RockstarButton = view.findViewById(R.id.RockstarButton);
         Button TwoKButton = view.findViewById(R.id.TwoKButton);
         Button RiotButton = view.findViewById(R.id.RiotButton);
+        Button TelltaleGamesButton = view.findViewById(R.id.TelltaleGamesButton);
 
-        ArrayList<String> checkedComapnys = new ArrayList<>();
-        checkedComapnys.add("Company");
+        ArrayList<String> checkedComapny = new ArrayList<>();
+        checkedComapny.add("Company");
         ActivisionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Bundle bundle = new Bundle();
-                checkedComapnys.add("Activision");
-                bundle.putStringArrayList("key", checkedComapnys);
+                checkedComapny.add("Activision");
+                bundle.putStringArrayList("key", checkedComapny);
 
                 FragmentResultsPage fragment = new FragmentResultsPage();
                 fragment.setArguments(bundle);
@@ -97,8 +98,8 @@ public class FragmentCompany extends Fragment {
             @Override
             public void onClick(View view) {
                 Bundle bundle = new Bundle();
-                checkedComapnys.add("CD Projekt RED\n");
-                bundle.putStringArrayList("key", checkedComapnys);
+                checkedComapny.add("CD Projekt RED");
+                bundle.putStringArrayList("key", checkedComapny);
 
                 FragmentResultsPage fragment = new FragmentResultsPage();
                 fragment.setArguments(bundle);
@@ -110,8 +111,8 @@ public class FragmentCompany extends Fragment {
             @Override
             public void onClick(View view) {
                 Bundle bundle = new Bundle();
-                checkedComapnys.add("Forza Motorsport");
-                bundle.putStringArrayList("key", checkedComapnys);
+                checkedComapny.add("Forza Motorsport");
+                bundle.putStringArrayList("key", checkedComapny);
 
                 FragmentResultsPage fragment = new FragmentResultsPage();
                 fragment.setArguments(bundle);
@@ -123,8 +124,8 @@ public class FragmentCompany extends Fragment {
             @Override
             public void onClick(View view) {
                 Bundle bundle = new Bundle();
-                checkedComapnys.add("EA");
-                bundle.putStringArrayList("key", checkedComapnys);
+                checkedComapny.add("EA");
+                bundle.putStringArrayList("key", checkedComapny);
 
                 FragmentResultsPage fragment = new FragmentResultsPage();
                 fragment.setArguments(bundle);
@@ -136,8 +137,8 @@ public class FragmentCompany extends Fragment {
             @Override
             public void onClick(View view) {
                 Bundle bundle = new Bundle();
-                checkedComapnys.add("Rockstar Games");
-                bundle.putStringArrayList("key", checkedComapnys);
+                checkedComapny.add("Rockstar Games");
+                bundle.putStringArrayList("key", checkedComapny);
 
                 FragmentResultsPage fragment = new FragmentResultsPage();
                 fragment.setArguments(bundle);
@@ -149,8 +150,8 @@ public class FragmentCompany extends Fragment {
             @Override
             public void onClick(View view) {
                 Bundle bundle = new Bundle();
-                checkedComapnys.add("2K Sports");
-                bundle.putStringArrayList("key", checkedComapnys);
+                checkedComapny.add("2K Sports");
+                bundle.putStringArrayList("key", checkedComapny);
 
                 FragmentResultsPage fragment = new FragmentResultsPage();
                 fragment.setArguments(bundle);
@@ -162,8 +163,21 @@ public class FragmentCompany extends Fragment {
             @Override
             public void onClick(View view) {
                 Bundle bundle = new Bundle();
-                checkedComapnys.add("RIOT Games");
-                bundle.putStringArrayList("key", checkedComapnys);
+                checkedComapny.add("RIOT Games");
+                bundle.putStringArrayList("key", checkedComapny);
+
+                FragmentResultsPage fragment = new FragmentResultsPage();
+                fragment.setArguments(bundle);
+
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView,fragment).commit();
+            }
+        });
+        TelltaleGamesButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Bundle bundle = new Bundle();
+                checkedComapny.add("Telltale Games");
+                bundle.putStringArrayList("key", checkedComapny);
 
                 FragmentResultsPage fragment = new FragmentResultsPage();
                 fragment.setArguments(bundle);

@@ -28,7 +28,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="411dp"
         android:layout_height="match_parent"
         android:layout_gravity="center"
         android:gravity="center"
@@ -55,30 +55,32 @@
             android:orientation="horizontal"
             android:padding="15dp">
 
-            <CheckBox
-                android:id="@+id/ActionCheckBox"
+            <Button
+                android:id="@+id/ActionButton"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1"
+                android:background="@drawable/design_button"
                 android:fontFamily="@font/amarante"
                 android:gravity="center"
                 android:padding="15dp"
                 android:text="Action"
-                android:textColor="@color/teal_200"
+                android:textColor="@color/white"
                 android:textSize="16sp" />
 
-            <CheckBox
-                android:id="@+id/SportsCheckBox"
+            <Button
+                android:id="@+id/SportsButton"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1"
+                android:background="@drawable/design_button"
                 android:fontFamily="@font/amarante"
                 android:gravity="center"
                 android:padding="15dp"
                 android:text="Sports"
-                android:textColor="@color/teal_200"
+                android:textColor="@color/white"
                 android:textSize="16sp" />
         </LinearLayout>
 
@@ -91,30 +93,32 @@
             android:orientation="horizontal"
             android:padding="15dp">
 
-            <CheckBox
-                android:id="@+id/AdventureCheckBox"
+            <Button
+                android:id="@+id/AdventureButton"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1"
+                android:background="@drawable/design_button"
                 android:fontFamily="@font/amarante"
                 android:gravity="center"
                 android:padding="15dp"
                 android:text="Adventure"
-                android:textColor="@color/teal_200"
+                android:textColor="@color/white"
                 android:textSize="16sp" />
 
-            <CheckBox
-                android:id="@+id/RoleplayingCheckBox"
+            <Button
+                android:id="@+id/RoleplayingButton"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1"
+                android:background="@drawable/design_button"
                 android:fontFamily="@font/amarante"
                 android:gravity="center"
                 android:padding="15dp"
                 android:text="Roleplaying"
-                android:textColor="@color/teal_200"
+                android:textColor="@color/white"
                 android:textSize="16sp" />
 
         </LinearLayout>
@@ -128,30 +132,32 @@
             android:orientation="horizontal"
             android:padding="15dp">
 
-            <CheckBox
-                android:id="@+id/BattleRoyaleCheckBox"
-                android:layout_width="match_parent"
+            <Button
+                android:id="@+id/BattleRoyaleButton"
+                android:layout_width="371dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1"
+                android:background="@drawable/design_button"
                 android:fontFamily="@font/amarante"
                 android:gravity="center"
                 android:padding="15dp"
                 android:text="Battle royale"
-                android:textColor="@color/teal_200"
+                android:textColor="@color/white"
                 android:textSize="16sp" />
 
-            <CheckBox
-                android:id="@+id/FirstPersonShooterCheckBox"
-                android:layout_width="match_parent"
+            <Button
+                android:id="@+id/FirstPersonShooterButton"
+                android:layout_width="376dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1"
+                android:background="@drawable/design_button"
                 android:fontFamily="@font/amarante"
                 android:gravity="center"
                 android:padding="15dp"
                 android:text="first person shooter"
-                android:textColor="@color/teal_200"
+                android:textColor="@color/white"
                 android:textSize="16sp" />
         </LinearLayout>
 
@@ -164,42 +170,34 @@
             android:orientation="horizontal"
             android:padding="15dp">
 
-            <CheckBox
-                android:id="@+id/RacingCheckBox"
+            <Button
+                android:id="@+id/RacingButton"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1"
+                android:background="@drawable/design_button"
                 android:fontFamily="@font/amarante"
                 android:gravity="center"
                 android:padding="15dp"
                 android:text="Racing"
-                android:textColor="@color/teal_200"
+                android:textColor="@color/white"
                 android:textSize="16sp" />
 
-            <CheckBox
-                android:id="@+id/FantasyCheckBox"
+            <Button
+                android:id="@+id/FantasyButton"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1"
+                android:background="@drawable/design_button"
                 android:fontFamily="@font/amarante"
                 android:gravity="center"
                 android:text="Fantasy"
-                android:textColor="@color/teal_200"
+                android:textColor="@color/white"
                 android:textSize="16sp" />
 
         </LinearLayout>
-
-        <Button
-            android:id="@+id/SearchGenreButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.2"
-            android:background="@drawable/design_button"
-            android:fontFamily="@font/amarante"
-            android:minHeight="48dp"
-            android:text="search" />
 
     </LinearLayout>
 

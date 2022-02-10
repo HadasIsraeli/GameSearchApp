@@ -12,6 +12,8 @@ import android.widget.Button;
 
 import com.example.gamesearcher.R;
 
+import java.util.ArrayList;
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link FragmentGenre#newInstance} factory method to
@@ -64,15 +66,125 @@ public class FragmentGenre extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_genre, container, false);
 
-        Button SearchGenreButton = view.findViewById(R.id.SearchGenreButton);
+
         Button StartOverGenreButton = view.findViewById(R.id.StartOverSearchFromGenreButton);
 
-        SearchGenreButton.setOnClickListener(new View.OnClickListener() {
+        Button ActionButton = view.findViewById(R.id.ActionButton);
+        Button SportsButton = view.findViewById(R.id.SportsButton);
+        Button AdventureButton = view.findViewById(R.id.AdventureButton);
+        Button RoleplayingButton = view.findViewById(R.id.RoleplayingButton);
+        Button BattleRoyaleButton = view.findViewById(R.id.BattleRoyaleButton);
+        Button FirstPersonShooterButton = view.findViewById(R.id.FirstPersonShooterButton);
+        Button RacingButton = view.findViewById(R.id.RacingButton);
+        Button FantasyButton = view.findViewById(R.id.FantasyButton);
+
+        ArrayList<String> selectedGenre = new ArrayList<>();
+        selectedGenre.add("Genre");
+        ActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view1) {
-                Navigation.findNavController(view).navigate(R.id.action_fragmentGenre_to_fragmentResultsPage);
+            public void onClick(View view) {
+                Bundle bundle = new Bundle();
+                selectedGenre.add("Action");
+                bundle.putStringArrayList("key", selectedGenre);
+
+                FragmentResultsPage fragment = new FragmentResultsPage();
+                fragment.setArguments(bundle);
+
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView,fragment).commit();
             }
         });
+        SportsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Bundle bundle = new Bundle();
+                selectedGenre.add("Sports");
+                bundle.putStringArrayList("key", selectedGenre);
+
+                FragmentResultsPage fragment = new FragmentResultsPage();
+                fragment.setArguments(bundle);
+
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView,fragment).commit();
+            }
+        });
+        AdventureButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Bundle bundle = new Bundle();
+                selectedGenre.add("Adventure");
+                bundle.putStringArrayList("key", selectedGenre);
+
+                FragmentResultsPage fragment = new FragmentResultsPage();
+                fragment.setArguments(bundle);
+
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView,fragment).commit();
+            }
+        });
+        RoleplayingButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Bundle bundle = new Bundle();
+                selectedGenre.add("Roleplaying");
+                bundle.putStringArrayList("key", selectedGenre);
+
+                FragmentResultsPage fragment = new FragmentResultsPage();
+                fragment.setArguments(bundle);
+
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView,fragment).commit();
+            }
+        });
+        BattleRoyaleButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Bundle bundle = new Bundle();
+                selectedGenre.add("Battle royale");
+                bundle.putStringArrayList("key", selectedGenre);
+
+                FragmentResultsPage fragment = new FragmentResultsPage();
+                fragment.setArguments(bundle);
+
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView,fragment).commit();
+            }
+        });
+        FirstPersonShooterButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Bundle bundle = new Bundle();
+                selectedGenre.add("First person hero shooter");
+                bundle.putStringArrayList("key", selectedGenre);
+
+                FragmentResultsPage fragment = new FragmentResultsPage();
+                fragment.setArguments(bundle);
+
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView,fragment).commit();
+            }
+        });
+        RacingButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Bundle bundle = new Bundle();
+                selectedGenre.add("Racing");
+                bundle.putStringArrayList("key", selectedGenre);
+
+                FragmentResultsPage fragment = new FragmentResultsPage();
+                fragment.setArguments(bundle);
+
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView,fragment).commit();
+            }
+        });
+        FantasyButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Bundle bundle = new Bundle();
+                selectedGenre.add("Fantasy");
+                bundle.putStringArrayList("key", selectedGenre);
+
+                FragmentResultsPage fragment = new FragmentResultsPage();
+                fragment.setArguments(bundle);
+
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView,fragment).commit();
+            }
+        });
+
 
         StartOverGenreButton.setOnClickListener(new View.OnClickListener() {
             @Override
